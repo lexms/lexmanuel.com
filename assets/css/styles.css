@@ -31,8 +31,16 @@ a.btn {
 	text-transform: uppercase;
 	font-weight: bold;
 	text-align: center;
-	background-color: #d5acac;
+	background-color: #cf3a3a;
 	opacity: 1;
+}
+
+a.btn:hover {
+	background-color: #f15a5a;
+}
+
+a.btn:active {
+	background-color: #d45353;
 }
 
 section {
@@ -303,7 +311,7 @@ footer {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	background-color: #614e4e;
+	background-color: #850000;
 	color: #fff;
 	padding: 20px 0;
 }
