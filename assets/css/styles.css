@@ -386,6 +386,7 @@ footer p {
 }
 @media(max-width:800px){
 	.resp-iframe iframe{
+		min-height: 1000px;
 		width: 100%;
 	}
 }
