@@ -167,6 +167,7 @@ header nav li {
 }
 
 .hero .background-image.dscpage{
+	background-color: white;
 	background-size: cover;
 }
 
@@ -247,25 +248,25 @@ header nav li {
 	}
 }
 
-/*Packages Section*/
+/*goals Section*/
 
-.packages .grid li {
+.goals .grid li {
 	padding: 25px;
 	flex-basis: 25%;
 	text-align: center;
 }
 
-.packages .grid li i {
+.goals .grid li i {
 	color: #8c9eff;
 }
 
-.packages .grid li h4 {
+.goals .grid li h4 {
 	font-size: 30px;
 	margin: 25px 0;
 }
 
 @media (max-width: 800px) {
-	.packages .grid li {
+	.goals .grid li {
 		flex-basis: 100%;
 		padding: 20px;
 	}
