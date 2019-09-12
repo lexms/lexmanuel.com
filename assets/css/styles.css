@@ -218,6 +218,10 @@ header nav li {
 
 /*gallery Section*/
 
+.grid img{
+	width: 271px;
+}
+
 .gallery .grid li {
 	height: 350px;
 	padding: 20px;
