@@ -250,6 +250,12 @@ header nav li {
 
 /*goals Section*/
 
+.goals{
+	background-image: url("../img/bg2.jpg"); 
+	background-repeat: repeat;
+	background-size: contain;
+}
+
 .goals .grid li {
 	padding: 25px;
 	flex-basis: 25%;
@@ -269,6 +275,9 @@ header nav li {
 	.goals .grid li {
 		flex-basis: 100%;
 		padding: 20px;
+	}
+	.goals{
+		background-image: none;
 	}
 }
 
@@ -293,6 +302,12 @@ header nav li {
 }
 
 /*Contact Section*/
+
+.contact.dscpage{
+	background-image: url("../img/wave.png"); 
+	background-repeat: no-repeat; 
+	background-position: bottom;
+}
 
 .contact form {
 	display: flex;
@@ -322,6 +337,8 @@ header nav li {
 }
 
 /*Footer Section*/
+
+
 
 footer {
 	display: flex;
@@ -361,3 +378,14 @@ footer p {
 		margin: 0 8px;
 	}
 } 
+
+
+.resp-iframe iframe{
+	width:640px; 
+	height:1679px;
+}
+@media(max-width:800px){
+	.resp-iframe iframe{
+		width: 100%;
+	}
+}
