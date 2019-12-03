@@ -1,0 +1,381 @@
+@media (max-width: 800px) {
+    *{
+        overflow-x: hidden;\
+        
+    }
+}
+
+#hero{
+    min-height: 100vh;
+    background: 
+        url("../img/hero/hill_bg.svg"),
+        linear-gradient(#6c72a7 0%, #868bb6 25.77%, #b2b4d0 45.52%, #cccde0 100%);
+
+
+    background-size: contain;
+}
+
+
+/* HERO CLOUDS */
+.hero_clouds img{
+    margin-top: -20px;
+    position: absolute;
+    width: 90vw;
+    animation: nudge 10s linear infinite;
+}
+
+@keyframes nudge {
+    50% {
+      transform: translate(10vw, 0);
+    }
+  }
+
+  @media (max-width: 800px) {
+    .hero_clouds img{
+        margin-top: -20px;
+        position: absolute;
+        width: 90vw;
+    }
+}
+
+
+
+  
+/* HILL MAIN */
+
+.hill_main img{
+    margin-top: -200px;
+    width: 1000px;
+}
+
+@media (max-width: 800px) {
+    .hill_main img{
+        margin-top: 0px;
+        width: 350px;
+    }
+}
+.slide-in-blurred-top {
+	-webkit-animation: slide-in-blurred-top 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+	        animation: slide-in-blurred-top 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+
+ @-webkit-keyframes slide-in-blurred-top {
+    0% {
+      -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+              transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+      -webkit-filter: blur(40px);
+              filter: blur(40px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+              transform: translateY(0) scaleY(1) scaleX(1);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-blurred-top {
+    0% {
+      -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+              transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+      -webkit-filter: blur(40px);
+              filter: blur(40px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+              transform: translateY(0) scaleY(1) scaleX(1);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+
+
+
+
+
+
+/* FONT HERO */
+.m-300{
+    margin-top: -300px;
+}
+.font-hero{
+    font-family: "Death Star";
+    font-weight: normal;
+    font-size: 78px;
+    letter-spacing: 0.15em;
+    text-align: center;
+    color: #f8cf97;
+    text-shadow: 0px 12px 0px #917956;
+}
+@media (max-width: 800px) {
+    .font-hero{   
+        font-size: 30px;
+        text-shadow: 0px 7px 0px #917956;
+    }
+    .m-300{
+        margin-top: -50px;
+    }
+}
+
+.slide-in-elliptic-top-fwd {
+	-webkit-animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -webkit-animation-delay: .7s;
+            animation-delay: .7s;
+
+}
+
+ @-webkit-keyframes slide-in-elliptic-top-fwd {
+    0% {
+      -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+              transform: translateY(-600px) rotateX(-30deg) scale(0);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0) rotateX(0) scale(1);
+              transform: translateY(0) rotateX(0) scale(1);
+      -webkit-transform-origin: 50% 1400px;
+              transform-origin: 50% 1400px;
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-elliptic-top-fwd {
+    0% {
+      -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+              transform: translateY(-600px) rotateX(-30deg) scale(0);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0) rotateX(0) scale(1);
+              transform: translateY(0) rotateX(0) scale(1);
+      -webkit-transform-origin: 50% 1400px;
+              transform-origin: 50% 1400px;
+      opacity: 1;
+    }
+  }
+
+.year_cmt{
+    font-family: "Death Star";
+    font-weight: normal;
+    font-size: 78px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: #D2861E;
+}
+@media (max-width: 800px) {
+    .year_cmt{
+        font-size: 30px;
+    }
+}
+
+.roll-in-blurred-left {
+	-webkit-animation: roll-in-blurred-left 0.65s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+	        animation: roll-in-blurred-left 0.65s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+    -webkit-animation-delay: 1.4s;
+            animation-delay: 1.4s;
+}
+@-webkit-keyframes roll-in-blurred-left {
+    0% {
+      -webkit-transform: translateX(-1000px) rotate(-720deg);
+              transform: translateX(-1000px) rotate(-720deg);
+      -webkit-filter: blur(50px);
+              filter: blur(50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) rotate(0deg);
+              transform: translateX(0) rotate(0deg);
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+  @keyframes roll-in-blurred-left {
+    0% {
+      -webkit-transform: translateX(-1000px) rotate(-720deg);
+              transform: translateX(-1000px) rotate(-720deg);
+      -webkit-filter: blur(50px);
+              filter: blur(50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) rotate(0deg);
+              transform: translateX(0) rotate(0deg);
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+  
+
+
+/* Font Theme */
+
+.font-theme{
+    font-family: Nasalization;
+    font-weight: normal;
+    font-size: 30px;
+    letter-spacing: 0.15em;
+    text-align: center;
+    color: #d2861e;
+}
+@media (max-width: 800px) {
+    .font-theme{
+        font-size: 15px;
+    }
+}
+
+.font-theme-detail{
+    font-family: "Death Star";
+    font-weight: normal;
+    font-size: 50px;
+    letter-spacing: 0.15em;
+    text-align: center;
+    color: #f8cf97;
+    text-shadow: 0px 9px 0px #917956;
+}
+@media (max-width: 800px) {
+    .font-theme-detail{
+        font-size: 15px;
+        text-shadow: 0px 3px 0px #917956;
+    }
+}
+
+.the_date{
+    border: 5px solid #917956;
+    text-align: center;
+    font-family: "Death Star";
+    font-weight: normal;
+    font-size: 30px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: #D2861E;
+}
+@media (max-width: 800px) {
+    .the_date{
+        font-size: 15px;
+        border: 2px solid #917956;
+    }
+}
+
+
+
+
+
+/* WHAT IS CMT */  
+#what_is_cmt{
+    height: 250vh;
+    background:
+        url("../img/whatiscmt/star.svg"), 
+        linear-gradient(#cccde0 0%, #01132b 51.55%, #01132b 100%);
+
+}
+
+/* .what_is_cmt_detail{
+    background-image: url("../img/whatiscmt/windowall.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 500px;
+    height: 1080px;
+    width: 100vw;
+    max-width:100%;
+    
+    z-index: 99;
+    margin-left: 0px;
+} */
+
+
+.window img{
+    margin-top: 500px;
+    position: absolute;
+    max-width:100%;
+    width: 100vw;
+    z-index: 0;
+    margin-left: 0px;
+}
+
+.ufo img{
+    position: absolute;
+    z-index: 0;
+    padding-top: 500px;
+    width: 500px;
+    max-width: 50%;
+}
+
+@media (max-width: 800px) {
+    .window img{
+        margin-top: 300px;
+
+    }
+
+    #what_is_cmt{
+        height: 100vh;
+    }
+    .ufo img{
+        width: 100px;
+        padding-top: 120px;
+    }
+
+    
+    
+
+
+}
+
+
+.what_is_cmt_detail{
+    width: 94%;
+    position: absolute;
+    display: block;
+    z-index: 1;
+}
+
+.what_is_cmt_title{
+    margin-top: 850px;
+    font-family: "Death Star";
+    font-weight: normal;
+    font-size: 40px;
+    letter-spacing: 0.15em;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0px 7px 0px #d2861e;
+      
+}
+
+
+
+.what_is_cmt_desc{
+    font-family: Nasalization;
+    font-weight: normal;
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+    width: 600px;
+
+}
+
+@media (max-width: 800px) {
+    .what_is_cmt_title{
+        font-size: 15px;
+        margin-top: 366px;
+    }
+    .what_is_cmt_desc{
+        font-size: 10px;
+        width: 70vw;
+    }
+}
