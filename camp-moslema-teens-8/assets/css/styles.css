@@ -1,6 +1,24 @@
+@font-face {
+    font-family: 'Nasalization';
+    src: url("../fonts/nasalization/onlinewebfonts.eot"); /* IE9*/
+    src: url("../fonts/nasalization/onlinewebfonts.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/nasalization/onlinewebfonts.woff2") format("woff2"), /* chrome、firefox */
+    url("../fonts/nasalization/onlinewebfonts.woff") format("woff"), /* chrome、firefox */
+    url("../fonts/nasalization/onlinewebfonts.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("../fonts/nasalization/onlinewebfonts.svg#NasalizationRg-Regular") format("svg"); /* iOS 4.1- */
+}
+@font-face {font-family: "Death Star";
+    src: url("../fonts/deathstar/onlinewebfonts.eot"); /* IE9*/
+    src: url("../fonts/deathstar/onlinewebfonts.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/deathstar/onlinewebfonts.woff2") format("woff2"), /* chrome、firefox */
+    url("../fonts/deathstar/onlinewebfonts.woff") format("woff"), /* chrome、firefox */
+    url("../fonts/deathstar/onlinewebfonts.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("../fonts/deathstar/onlinewebfonts.svg#DeathStar") format("svg"); /* iOS 4.1- */
+  }
+
 @media (max-width: 800px) {
     *{
-        overflow-x: hidden;\
+        overflow-x: hidden;
         
     }
 }
@@ -56,7 +74,9 @@
 }
 .slide-in-blurred-top {
 	-webkit-animation: slide-in-blurred-top 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
-	        animation: slide-in-blurred-top 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+            animation: slide-in-blurred-top 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+    -webkit-animation-delay: .5s;
+            animation-delay: .5s;
 }
 
  @-webkit-keyframes slide-in-blurred-top {
@@ -131,8 +151,8 @@
 .slide-in-elliptic-top-fwd {
 	-webkit-animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    -webkit-animation-delay: .7s;
-            animation-delay: .7s;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
 
 }
 
@@ -186,8 +206,8 @@
 .roll-in-blurred-left {
 	-webkit-animation: roll-in-blurred-left 0.65s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
 	        animation: roll-in-blurred-left 0.65s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
-    -webkit-animation-delay: 1.4s;
-            animation-delay: 1.4s;
+    -webkit-animation-delay: 1.6s;
+            animation-delay: 1.6s;
 }
 @-webkit-keyframes roll-in-blurred-left {
     0% {
