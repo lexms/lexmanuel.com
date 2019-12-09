@@ -9,6 +9,7 @@
 html {
 	font: normal 16px sans-serif;
 	color: #555;
+	overflow-x: hidden;
 }
 
 ul,
