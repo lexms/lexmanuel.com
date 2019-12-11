@@ -19,8 +19,9 @@
 
 $(window).on('load', function() {
   $(".cmt").removeClass("invisible"); 
-  $(".view ").addClass("invisible");
+  $(".loader ").addClass("invisible");
   $(".hill_main ").addClass("slide-in-blurred-top"); 
   $(".font-hero ").addClass("slide-in-elliptic-top-fwd"); 
   $(".year_cmt ").addClass("roll-in-blurred-left"); 
 });
+

@@ -1,30 +1,29 @@
 @font-face {
-    font-family: 'Nasalization';
-    src: url("../fonts/nasalization/onlinewebfonts.eot"); /* IE9*/
-    src: url("../fonts/nasalization/onlinewebfonts.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-    url("../fonts/nasalization/onlinewebfonts.woff2") format("woff2"), /* chrome、firefox */
-    url("../fonts/nasalization/onlinewebfonts.woff") format("woff"), /* chrome、firefox */
-    url("../fonts/nasalization/onlinewebfonts.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    url("../fonts/nasalization/onlinewebfonts.svg#NasalizationRg-Regular") format("svg"); /* iOS 4.1- */
+  font-family: 'Nasalization';
+  src: url("../fonts/nasalization/onlinewebfonts.eot"); /* IE9*/
+  src: url("../fonts/nasalization/onlinewebfonts.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("../fonts/nasalization/onlinewebfonts.woff2") format("woff2"), /* chrome、firefox */
+  url("../fonts/nasalization/onlinewebfonts.woff") format("woff"), /* chrome、firefox */
+  url("../fonts/nasalization/onlinewebfonts.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("../fonts/nasalization/onlinewebfonts.svg#NasalizationRg-Regular") format("svg"); /* iOS 4.1- */
 }
 @font-face {font-family: "Death Star";
-    src: url("../fonts/deathstar/onlinewebfonts.eot"); /* IE9*/
-    src: url("../fonts/deathstar/onlinewebfonts.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-    url("../fonts/deathstar/onlinewebfonts.woff2") format("woff2"), /* chrome、firefox */
-    url("../fonts/deathstar/onlinewebfonts.woff") format("woff"), /* chrome、firefox */
-    url("../fonts/deathstar/onlinewebfonts.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    url("../fonts/deathstar/onlinewebfonts.svg#DeathStar") format("svg"); /* iOS 4.1- */
-  }
-
-@media (max-width: 800px) {
-    *{
-        overflow-x: hidden;
-        
-    }
+  src: url("../fonts/deathstar/onlinewebfonts.eot"); /* IE9*/
+  src: url("../fonts/deathstar/onlinewebfonts.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("../fonts/deathstar/onlinewebfonts.woff2") format("woff2"), /* chrome、firefox */
+  url("../fonts/deathstar/onlinewebfonts.woff") format("woff"), /* chrome、firefox */
+  url("../fonts/deathstar/onlinewebfonts.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("../fonts/deathstar/onlinewebfonts.svg#DeathStar") format("svg"); /* iOS 4.1- */
 }
+
+
+
 
 html, body {
     background: #222;
+    overflow-x: hidden;
+    width: 100vw;
+    max-width: 100%;
 }
 
 
@@ -36,131 +35,103 @@ html, body {
     font-size: 3rem;
 }
 
-.view {
+.loader {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    -webkit-perspective: 400;
-            perspective: 400;
   }
-  
-  .plane {
-    width: 120px;
-    height: 120px;
-    -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
-  }
-  .plane.main {
+
+  .lds-grid {
+    display: inline-block;
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    -webkit-transform: rotateX(60deg) rotateZ(-30deg);
-            transform: rotateX(60deg) rotateZ(-30deg);
-    -webkit-animation: rotate 20s infinite linear;
-            animation: rotate 20s infinite linear;
+    width: 80px;
+    height: 80px;
   }
-  .plane.main .circle {
-    width: 120px;
-    height: 120px;
+  .lds-grid div {
     position: absolute;
-    -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
-    border-radius: 100%;
-    box-sizing: border-box;
-    box-shadow: 0 0 60px gold, inset 0 0 60px gold;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #fff;
+    animation: lds-grid 1.2s linear infinite;
   }
-  .plane.main .circle::before, .plane.main .circle::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    width: 10%;
-    height: 10%;
-    border-radius: 100%;
-    background: goldenrod;
-    box-sizing: border-box;
-    box-shadow: 0 0 60px 2px goldenrod;
+  .lds-grid div:nth-child(1) {
+    top: 8px;
+    left: 8px;
+    animation-delay: 0s;
   }
-  .plane.main .circle::before {
-    -webkit-transform: translateZ(-90px);
-            transform: translateZ(-90px);
+  .lds-grid div:nth-child(2) {
+    top: 8px;
+    left: 32px;
+    animation-delay: -0.4s;
   }
-  .plane.main .circle::after {
-    -webkit-transform: translateZ(90px);
-            transform: translateZ(90px);
+  .lds-grid div:nth-child(3) {
+    top: 8px;
+    left: 56px;
+    animation-delay: -0.8s;
   }
-  .plane.main .circle:nth-child(1) {
-    -webkit-transform: rotateZ(72deg) rotateX(63.435deg);
-            transform: rotateZ(72deg) rotateX(63.435deg);
+  .lds-grid div:nth-child(4) {
+    top: 32px;
+    left: 8px;
+    animation-delay: -0.4s;
   }
-  .plane.main .circle:nth-child(2) {
-    -webkit-transform: rotateZ(144deg) rotateX(63.435deg);
-            transform: rotateZ(144deg) rotateX(63.435deg);
+  .lds-grid div:nth-child(5) {
+    top: 32px;
+    left: 32px;
+    animation-delay: -0.8s;
   }
-  .plane.main .circle:nth-child(3) {
-    -webkit-transform: rotateZ(216deg) rotateX(63.435deg);
-            transform: rotateZ(216deg) rotateX(63.435deg);
+  .lds-grid div:nth-child(6) {
+    top: 32px;
+    left: 56px;
+    animation-delay: -1.2s;
   }
-  .plane.main .circle:nth-child(4) {
-    -webkit-transform: rotateZ(288deg) rotateX(63.435deg);
-            transform: rotateZ(288deg) rotateX(63.435deg);
+  .lds-grid div:nth-child(7) {
+    top: 56px;
+    left: 8px;
+    animation-delay: -0.8s;
   }
-  .plane.main .circle:nth-child(5) {
-    -webkit-transform: rotateZ(360deg) rotateX(63.435deg);
-            transform: rotateZ(360deg) rotateX(63.435deg);
+  .lds-grid div:nth-child(8) {
+    top: 56px;
+    left: 32px;
+    animation-delay: -1.2s;
   }
-  
-  @-webkit-keyframes rotate {
-    0% {
-      -webkit-transform: rotateX(0) rotateY(0) rotateZ(0);
-              transform: rotateX(0) rotateY(0) rotateZ(0);
+  .lds-grid div:nth-child(9) {
+    top: 56px;
+    left: 56px;
+    animation-delay: -1.6s;
+  }
+  @keyframes lds-grid {
+    0%, 100% {
+      opacity: 1;
     }
-    100% {
-      -webkit-transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
-              transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    50% {
+      opacity: 0.5;
     }
   }
   
-  @keyframes rotate {
-    0% {
-      -webkit-transform: rotateX(0) rotateY(0) rotateZ(0);
-              transform: rotateX(0) rotateY(0) rotateZ(0);
-    }
-    100% {
-      -webkit-transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
-              transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
-    }
-  }
+  
 
 
 
-
-
-
+/* HERO */
 #hero{
     min-height: 100vh;
     background: 
-        url("../img/hero/hill_bg.svg"),
+        /* url("../img/hero/hill_bg.svg"), */
         linear-gradient(#6c72a7 0%, #868bb6 25.77%, #b2b4d0 45.52%, #cccde0 100%);
-
-
     background-size: contain;
 }
 
 
+
+
 /* HERO CLOUDS */
 .hero_clouds img{
-    margin-top: -20px;
+    margin-top: 200px;
     position: absolute;
+    z-index: 99;
     width: 90vw;
     animation: nudge 10s linear infinite;
 }
@@ -173,8 +144,9 @@ html, body {
 
   @media (max-width: 800px) {
     .hero_clouds img{
-        margin-top: -20px;
+        margin-top: 100px;
         position: absolute;
+        z-index: 99;
         width: 90vw;
     }
 }
@@ -242,8 +214,6 @@ html, body {
       opacity: 1;
     }
   }
-
-
 
 
 
@@ -419,106 +389,186 @@ html, body {
 
 
 
+/* FLOATING */
+.floating-object{
+  position: absolute;
+  width: 100%;
+}
+
+.back-1 img{
+  z-index: 1;
+  width: 7em;
+  position: absolute;
+  left: -20em;
+}
+
+.back-2 img{
+  z-index: -1;
+  position: absolute;
+  top: 50em;
+  left: 2vw;
+  width: 13em;
+}
+
+.back-3 img{
+  z-index: -1;
+  position: absolute;
+  top: 15em;
+  left: 40vw;
+  width: 20em;
+}
+
+@media (max-width: 800px) {
+  .back-1 img{
+    z-index: -1;
+    position: absolute;
+    top: 10em;
+    left: 0em;
+    width: 5em;
+  }
+
+  .back-2 img{
+    z-index: -1;
+    position: absolute;
+    top: 10em;
+    left: 70vw;
+    width: 7em;
+  }
+
+  .back-3 img{
+    z-index: -1;
+    position: absolute;
+    top: 15em;
+    left: 40vw;
+    width: 3em;
+  }
+
+}
+
+
+
 
 /* WHAT IS CMT */  
 #what_is_cmt{
-    height: 250vh;
-    background:
-        url("../img/whatiscmt/star.svg"), 
-        linear-gradient(#cccde0 0%, #01132b 51.55%, #01132b 100%);
+  height: 250vh;
+  background:
+      url("../img/whatiscmt/star.svg"), 
+      linear-gradient(#cccde0 0%, #01132b 51.55%, #01132b 100%);
+  padding-top: 30%;
 
 }
 
-/* .what_is_cmt_detail{
-    background-image: url("../img/whatiscmt/windowall.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-top: 500px;
-    height: 1080px;
-    width: 100vw;
-    max-width:100%;
-    
-    z-index: 99;
-    margin-left: 0px;
+#what_is_cmt .col-12{
+  padding: 0px;
+}
+
+/* .center-vertical .center-to-parent{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 } */
 
+.container-text-whatiscmt{
+  position: absolute;
+  z-index: 99;
+  max-width: 680px;
+  left: 50%;
+  -ms-transform: translate(-50%, 50%);
+  transform: translate(-50%, 50%);
+}
 
-.window img{
-    margin-top: 500px;
-    position: absolute;
-    max-width:100%;
-    width: 100vw;
-    z-index: 0;
-    margin-left: 0px;
+.window{
+  width: 100%;
+}
+
+.window object {
+  width: 100%;
 }
 
 .ufo img{
-    position: absolute;
-    z-index: 0;
-    padding-top: 500px;
-    width: 500px;
-    max-width: 50%;
+  position: absolute;
+  z-index: 0;
+  left: -2em;
+  max-width: 50%;
+  width: 500px;
+  padding-top: 20em;
 }
 
-@media (max-width: 800px) {
-    .window img{
-        margin-top: 300px;
-
-    }
-
-    #what_is_cmt{
-        height: 100vh;
-    }
-    .ufo img{
-        width: 100px;
-        padding-top: 120px;
-    }
-
-    
-    
-
-
-}
-
-
-.what_is_cmt_detail{
-    width: 94%;
-    position: absolute;
-    display: block;
-    z-index: 1;
+.moonlight img{
+  position: absolute;
+  z-index: 0;
+  margin-left: 70%;
+  max-width: 30%;
+  min-width: 30em;
 }
 
 .what_is_cmt_title{
-    margin-top: 850px;
+  padding-bottom: 0.5em;
+  font-family: "Death Star";
+  font-weight: normal;
+  font-size: 3em;
+  letter-spacing: 0.15em;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0px 7px 0px #d2861e;     
+}
+.what_is_cmt_desc{
+  font-family: Nasalization;
+  font-weight: normal;
+  font-size: 1.5em;
+  text-align: center;
+  color: #fff;
+}
+
+
+@media (max-width: 800px) {
+  #what_is_cmt{
+      height: 100vh;
+  }
+  .ufo img{
+    width: 7em;
+    padding-top: 2em;
+  }
+  .moonlight img{
+    max-width: 30%;
+    min-width: 5em;
+    margin-left: 80%;
+  }
+  .what_is_cmt_title{
+
+    padding-bottom: 0.5em;
     font-family: "Death Star";
     font-weight: normal;
-    font-size: 40px;
+    font-size: 1em;
     letter-spacing: 0.15em;
     text-align: center;
     color: #fff;
-    text-shadow: 0px 7px 0px #d2861e;
-      
-}
+    text-shadow: 0px 5px 0px #d2861e;     
+  }
 
-
-
-.what_is_cmt_desc{
+  .what_is_cmt_desc{
     font-family: Nasalization;
     font-weight: normal;
-    font-size: 25px;
+    font-size: 0.5em;
     text-align: center;
     color: #fff;
-    width: 600px;
+  }
+  .container-text-whatiscmt{
+    max-width: 80vw;
+    -ms-transform: translate(-50%, 30%);
+    transform: translate(-50%, 30%);
+  }
 
 }
 
-@media (max-width: 800px) {
-    .what_is_cmt_title{
-        font-size: 15px;
-        margin-top: 366px;
-    }
-    .what_is_cmt_desc{
-        font-size: 10px;
-        width: 70vw;
-    }
+@media (max-width: 800px) and (orientation:landscape) {
+  .container-text-whatiscmt{
+    max-width: 80vw;
+    -ms-transform: translate(-50%,-80%);
+    transform: translate(-50%,-80%);
+  }
 }
+

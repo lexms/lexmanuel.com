@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width", initial-scale=1>
   <title>Camp Moslema Teens 8</title>
-
+  
   <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
@@ -22,22 +22,16 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
-
+ 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body data-spy="scroll" data-target="#main-navbar" data-offset="0">
-  <div class="view d-flex justify-content-center">
+  <div class="loader d-flex justify-content-center">
     <div class="font-loading mx-auto my-auto">LOADING CMT</div>
-    <div class="plane main">
-      <div class="circle"></div>
-      <div class="circle"></div>
-      <div class="circle"></div>
-      <div class="circle"></div>
-      <div class="circle"></div>
-      <div class="circle"></div>
+    <div class="lds-grid mx-auto my-auto"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
     </div>
   </div>
 
@@ -45,16 +39,26 @@
   <div class="container-fluid cmt invisible">
   
   <div id="hero" class="row">
-    <div class="hero_clouds">
-      <img src="assets/img/hero/clouds.svg" alt="">
+    <div class="hero_clouds rellax" data-rellax-speed="-8">
+      <img src="assets/img/hero/clouds.svg"  alt="moon">
     </div>
     <div class="mx-auto ">
       
-      <div class="hill_main d-flex justify-content-center  ">
+      <div class="hill_main d-flex justify-content-center rellax " data-rellax-speed="-3">
         <img src="assets/img/hero/hill_main.svg" class="" alt="Moon Hero">
-      </div>  
-
-      <div class="font-hero m-300 ">
+      </div>
+      <div class="col-12">
+        <div class="floating-object back-1 rellax" data-rellax-speed="-3">
+          <img src="assets/img/hero/Hilllow.svg" alt="">
+        </div>
+        <div class="floating-object back-2 rellax" data-rellax-speed="3">
+          <img src="assets/img/hero/Hilllow.svg" alt="">
+        </div>
+        <div class="floating-object back-3 rellax" data-rellax-speed="-5">
+            <img src="assets/img/hero/Hilllow.svg" alt="">
+        </div>
+      </div>
+      <div class="font-hero m-300 rellax" data-rellax-speed="8">
           CAMP FOR <br> MOSLEMA TEENS 
       </div>
 
@@ -70,22 +74,26 @@
 
 
   <div id="what_is_cmt" class="row">
-    <div class="window">
-      <div class="ufo d-none">
-        <img src="assets/img/whatiscmt/ufo.png" alt=""> 
-      </div>  
-      
-      <div class="what_is_cmt_detail mx-auto d-none">
-          <div class="what_is_cmt_title mx-auto">
-              WHAT IS CMTEENS?
-          </div>
-          <div class="what_is_cmt_desc mx-auto">
+    <div class="col-12">
+      <div class="ufo rellax" data-rellax-speed="-2">
+        <img src="assets/img/whatiscmt/ufo.svg" alt="ufo">
+      </div>
+      <div class="moonlight rellax" data-rellax-speed="-3">
+        <img src="assets/img/whatiscmt/moonlight.svg" alt="moonlight">
+      </div>
+      <div class=" rellax" data-rellax-speed="-1">
+        <!-- <div class="container-text-whatiscmt invisible">
+          <div class="what_is_cmt_title">WHAT IS CMTEENS?</div>
+          <div class="what_is_cmt_desc ">
               CMTeens is an annual event held by Nurul Fikri Boarding School’s student organization, is it intended to prepare the next generation for the future of humanity in Southeast Asia especially in Indonesia.
+              <br><br>
               We hold CMTeens event aimed at building the spirit of young people especially students. The aim is to make this generation more loving the homeland and spread the spirit of unity, especially in terms of uniting differences between tribes, religion, develop creativity, and self-development. In addition, this event is also intended as a means of  adhesive of solidarity between Southeast Asian students and self actualization media.
           </div>
+        </div> -->
+        <div class="window ">
+          <object viewbox data="assets/img/whatiscmt/what_is_cmt_text.svg" type="image/svg+xml"></object>
+        </div>
       </div>
-      <img src="assets/img/whatiscmt/what is cmt.svg" class="d-none d-lg-block" alt="">
-      <img src="assets/img/whatiscmt/what is cmt mobile.svg" class="d-lg-none" alt="">
     </div>
   </div>
 
@@ -102,6 +110,12 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="assets/js/rellax.min.js"></script>
+  <script>
+    var rellax = new Rellax('.rellax', {
+      center: true
+    });
+  </script>
   <script src="assets/js/script.js"></script>
 </body>
 </html>
