@@ -41,6 +41,7 @@ html, body {
     left: 0;
     right: 0;
     bottom: 0;
+    max-height: 100vh;
   }
 
   .lds-grid {
@@ -455,21 +456,13 @@ html, body {
       url("../img/whatiscmt/star.svg"), 
       linear-gradient(#cccde0 0%, #01132b 51.55%, #01132b 100%);
   padding-top: 30%;
+  background-repeat: no-repeat;
 
 }
 
 #what_is_cmt .col-12{
   padding: 0px;
 }
-
-/* .center-vertical .center-to-parent{
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-} */
 
 .container-text-whatiscmt{
   position: absolute;
@@ -572,3 +565,234 @@ html, body {
   }
 }
 
+
+/* misc */
+.font-section-title{
+  font-family: "Death Star";
+  font-weight: normal;
+  font-size: 5em;
+  letter-spacing: 0.15em;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0px 7px 0px #d2861e;     
+}
+@media (max-width: 800px) {
+  .font-section-title{
+    font-size: 2em;
+    text-shadow: 0px 5px 0px #d2861e;     
+  }
+}
+
+
+
+/* GRADIENT 2 */
+#gradient-2{
+  background:
+    url("../img/competitions/stars_low_opacity.svg"),  
+    linear-gradient(#01132b 0%, #9e2377 30.78%, #443777 80.33%, #01132b 100%);
+  
+}
+
+@media (max-width: 800px) {
+  #gradient-2{
+    background-size: cover;
+    
+  }
+}
+
+.grid{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 4em;
+}
+
+.grid div{
+  min-height: 200px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.grid .oneperfive{
+  flex-basis: 20%;
+}
+@media (max-width: 800px) {
+  .grid{
+    padding-left: 0em;
+    padding-right: 0em;
+  }
+
+  .grid div{
+    min-height: 150px;
+  }
+
+  .grid .oneperfive{
+    flex-basis: 50%;
+  }
+}
+
+/* RUNDOWN */
+
+.gueststar{
+  width: 50%;
+  text-align: center;
+}
+
+.gueststar object {
+  margin-top: -9em;
+  width: 50%;
+}
+
+@media (max-width: 800px) {
+  .gueststar{
+    
+    width: 80%;
+  }
+  
+  .gueststar object {
+    margin-top: -4em;
+    width: 80%;
+  }
+}
+
+
+
+/* RUNDOWN */
+.swoosh{
+  width: 110%;
+  text-align: center;
+  
+}
+
+.swoosh object {
+  margin-top: 3rem;
+  margin-left: -5rem;
+  width: 110%;
+}
+
+@media (max-width: 800px) {
+  .swoosh{
+    width: 120%;
+  }
+  
+  .swoosh object {
+    width: 120%;
+    margin-left: -2rem;
+  }
+}
+
+.planet-right img{
+  position: absolute;
+  top: -80em;
+  z-index: 99;
+  margin-left: 80%;
+  max-width: 30%;
+  min-width: 30em;
+}
+@media (max-width: 800px) {
+  .planet-right img{
+    top: -20em;
+    max-width: 10%;
+    min-width: 10em;
+    margin-left: 85%;
+  }
+}
+
+.saturn-left img{
+  position: absolute;
+  top: -60em;
+  z-index: 99;
+  max-width: 20%;
+  min-width: 20em;
+}
+@media (max-width: 800px) {
+  .saturn-left img{
+    position: absolute;
+    top: -20em;
+    z-index: 99;
+    margin-left: -10%;
+    max-width: 7%;
+    min-width: 7em;
+  }
+}
+
+.planet-center img{
+  position: absolute;
+  top: -30em;
+  z-index: 99;
+  margin-left: 20%;
+  max-width: 10%;
+  min-width: 10em;
+}
+@media (max-width: 800px) {
+  .planet-center img{
+    position: absolute;
+    top: -10em;
+    z-index: 99;
+    margin-left: 20%;
+    max-width: 5%;
+    min-width: 5em;
+  }
+}
+
+.day1-day2{
+  margin: auto;
+  margin-top: -80rem;
+  width: 80%;
+  text-align: center;
+}
+
+.day1-day2 object {
+  text-align: center;
+  margin-top: 0;
+  width: 80%;
+}
+
+@media (max-width: 800px) {
+  .day1-day2{
+    text-align: center;
+    width: 100%;
+    margin-top: -17rem;
+    margin-left: 1em;
+  }
+  
+  .day1-day2 object {
+    text-align: center;
+    width: 100%;
+    margin-left: -2rem;
+  }
+}
+
+
+
+/* GRADIENT 3 */
+#gradient-3{
+  height: 2162px;
+  background: linear-gradient(#01132b 0%, #01132b 23.43%, #983e40 62.25%, #232c47 100%);
+
+}
+
+
+/* GRADIENT 4 */
+#gradient-4{
+  height: 1886px;
+  background: linear-gradient(#232c47 0%, #232c47 43.84%, #4e3150 100%);
+
+
+}
+
+/* GRADIENT 5 */
+#gradient-5{
+  height: 3728px;
+  background: linear-gradient(#4e3150 0%, #122e96 22.08%, #0c0740 85.01%, #0c0740 100%);
+}
+
+
+/* GRADIENT 6 */
+#gradient-6{
+  height: 3404px;
+  background: linear-gradient(#0c0740 0%, #070b34 44.18%, #443777 75.98%, #6a3f6e 100%);
+
+}
