@@ -23,7 +23,7 @@ html, body {
     background: #222;
     overflow-x: hidden;
     width: 100vw;
-    max-width: 100%;
+    /* max-width: 100%; */
 }
 
 
@@ -387,6 +387,24 @@ html, body {
     }
 }
 
+.font-normal-text{
+  font-family: Nasalization;
+  font-weight: normal;
+  font-size: 1.5em;
+  text-align: center;
+  color: #fff;
+}
+@media (max-width: 800px) {
+  .font-normal-text{
+    font-family: Nasalization;
+    font-weight: normal;
+    font-size: 0.5em;
+    text-align: center;
+    color: #fff;
+  }
+}
+
+
 
 
 
@@ -618,6 +636,10 @@ html, body {
 .grid .oneperfive{
   flex-basis: 20%;
 }
+
+.grid .oneperthree{
+  flex-basis: 33%;
+}
 @media (max-width: 800px) {
   .grid{
     padding-left: 0em;
@@ -629,6 +651,10 @@ html, body {
   }
 
   .grid .oneperfive{
+    flex-basis: 50%;
+  }
+
+  .grid .oneperthree{
     flex-basis: 50%;
   }
 }
@@ -679,7 +705,7 @@ html, body {
   
   .swoosh object {
     width: 120%;
-    margin-left: -2rem;
+    margin-left: -2.5rem;
   }
 }
 
@@ -696,7 +722,7 @@ html, body {
     top: -20em;
     max-width: 10%;
     min-width: 10em;
-    margin-left: 85%;
+    margin-left: 95%;
   }
 }
 
@@ -737,62 +763,465 @@ html, body {
   }
 }
 
-.day1-day2{
-  margin: auto;
-  margin-top: -80rem;
-  width: 80%;
-  text-align: center;
-}
-
-.day1-day2 object {
-  text-align: center;
-  margin-top: 0;
-  width: 80%;
-}
-
-@media (max-width: 800px) {
-  .day1-day2{
-    text-align: center;
-    width: 100%;
-    margin-top: -17rem;
-    margin-left: 1em;
-  }
-  
-  .day1-day2 object {
-    text-align: center;
-    width: 100%;
-    margin-left: -2rem;
-  }
-}
 
 
 
 /* GRADIENT 3 */
 #gradient-3{
-  height: 2162px;
   background: linear-gradient(#01132b 0%, #01132b 23.43%, #983e40 62.25%, #232c47 100%);
-
+}
+.whattobring-svg{
+  width: 107%;
+  text-align: center;
 }
 
+.whattobring-svg object {
+  margin-top: 0rem;
+  margin-left: -8rem;
+  width: 107%;
+}
 
-/* GRADIENT 4 */
+@media (max-width: 800px) {
+  .whattobring-svg{
+    width: 110%;
+  }
+  
+  .whattobring-svg object {
+    width: 110%;
+    margin-left: -2rem;
+  }
+}
+
+.saturn-orange img{
+  position: absolute;
+  top: 0em;
+  z-index: 99;
+  margin-left: 10%;
+  max-width: 30%;
+  min-width: 30em;
+}
+@media (max-width: 800px) {
+  .saturn-orange img{
+    position: absolute;
+    top: 0em;
+    z-index: 99;
+    margin-left: -10%;
+    max-width: 10%;
+    min-width: 10em;
+  }
+}
+
+/* GRADIENT 4 Prohibited Things to Bring*/
 #gradient-4{
-  height: 1886px;
+  padding-top: 10em;
   background: linear-gradient(#232c47 0%, #232c47 43.84%, #4e3150 100%);
-
-
+}
+.prohibitedthings-svg{
+  width: 110%;
+  text-align: center;
 }
 
-/* GRADIENT 5 */
+.prohibitedthings-svg object {
+  padding-top: 0rem;
+  margin-top: -20rem;
+  margin-left: -6rem;
+  width: 110%;
+}
+
+@media (max-width: 800px) {
+  .prohibitedthings-svg{
+    width: 110%;
+  }
+  
+  .prohibitedthings-svg object {
+    width: 110%;
+    margin-left: -2rem;
+  }
+}
+
+.moonwithstars img{
+  position: absolute;
+  top: 2em;
+  z-index: -1;
+  margin-left: -10%;
+  max-width: 100%;
+  min-width: 100em;
+}
+@media (max-width: 800px) {
+  .moonwithstars img{
+    position: absolute;
+    top: 2em;
+    z-index: -1;
+    margin-left: -50%;
+    max-width: 90%;
+    min-width: 90em;
+  }
+}
+
+/* GRADIENT 5 merchandise*/
 #gradient-5{
-  height: 3728px;
-  background: linear-gradient(#4e3150 0%, #122e96 22.08%, #0c0740 85.01%, #0c0740 100%);
+  background: 
+    linear-gradient(#4e3150 0%, #122e96 22.08%, #0c0740 85.01%, #0c0740 100%);
 }
+
+.bigearth{
+  text-align: center;
+}
+
+.bigearth img{
+  margin-top: 20rem;
+  max-width: 50%;
+  min-width: 50em;
+}
+@media (max-width: 800px) {
+  .bigearth img{
+    margin-top: 5rem;
+    max-width: 20%;
+    min-width: 20em;
+  }
+}
+.volcano-svg{
+  width: 110%;
+  text-align: center;
+}
+
+.volcano-svg object {
+  padding-top: 0rem;
+  margin-top: 0rem;
+  margin-left: -6rem;
+  width: 110%;
+}
+
+@media (max-width: 800px) {
+  .volcano-svg{
+    width: 150%;
+  }
+  
+  .volcano-svg object {
+    margin-top: 7rem;
+    width: 150%;
+    margin-left: -5rem;
+  }
+}
+
+
+
+.redstonevolcano-bg{
+  background: url("../img/merchandise/redstonevolcano.svg");
+  margin-left: -15px;
+  max-width: 100%;
+  min-width: 100vw;
+}
+
+@media (max-width: 800px) {
+  .redstonevolcano-bg{
+    background-size: contain;
+    background-repeat: no-repeat;
+
+  }
+}
+
+
+.scroll-merchandise{
+  background: 
+  url("../img/merchandise/merchandisehud.svg");
+  background-repeat: no-repeat;
+  background-size: 100% ;
+  margin: auto;
+  height: 1300px;
+  width: 70%;  
+}
+
+
+.scroll-merchandise-children-box {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4em;
+  width: 70vw;  
+  margin: auto;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+.scroll-merchandise-children-box div{
+  margin: auto;
+  scroll-snap-align: center;
+}
+
+@media (max-width: 800px) {
+  .scroll-merchandise{
+    background: 
+    url("../img/merchandise/merchandisehud-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: auto;
+    height: 600px;
+    width: 70vw;  
+  }
+
+  .scroll-merchandise .grid{
+    padding: 0;
+  }
+
+  .scroll-merchandise-children-box{
+    padding: 1em;
+  }
+
+  .scroll-merchandise-children-box div, .scroll-merchandise-children-box img{
+    width: 25vw;
+  }
+  
+}
+
+/* location */
+.location{
+  background: url("../img/registration/shooting_star_galaxy.svg");
+  min-height: 200vh;
+}
+
+@media (max-width: 800px) {
+  .location{
+    min-height: 100vh;
+  } 
+}
+
+
+
+.map iframe{
+  width: 100%;
+  min-height: 30em;
+}
+
+
 
 
 /* GRADIENT 6 */
 #gradient-6{
-  height: 3404px;
   background: linear-gradient(#0c0740 0%, #070b34 44.18%, #443777 75.98%, #6a3f6e 100%);
 
+}
+
+.registration{
+  min-height: 100vh;
+}
+@media (max-width: 800px) {
+  .registration{
+    min-height: 70vh;
+  }
+}
+
+.regist-box{
+  position: absolute;
+  z-index: 99;
+  width: 10em;
+  border: 5px solid #ffffff;
+  text-align: center;
+  font-family: Nasalization;
+  font-weight: normal;
+  font-size: 3em;
+  letter-spacing: 0.06em;
+  color: rgb(255, 255, 255);
+}
+
+.regist-box a{
+  color: #fff;
+}
+
+.regist-box a:hover, .regist-box a:focus{
+  color: #fff;
+}
+@media (max-width: 800px) {
+  .regist-box{
+      font-size: 2em;
+      border: 2px solid #ffffff;
+  }
+}
+
+
+/*  */
+
+
+
+
+
+
+
+
+
+
+
+.ticketmoon-svg object {
+  padding-top: 0rem;
+  margin-top: 0rem;
+  margin-left: -6rem;
+  width: 110%;
+}
+
+@media (max-width: 800px) {
+  .ticketmoon-svg{
+    width: 120%;
+  }
+  
+  .ticketmoon-svg object {
+    margin-top: 7rem;
+    width: 120%;
+    margin-left: -5rem;
+  }
+}
+
+.moonwithstars-right img{
+  position: absolute;
+  top: -60em;
+  z-index: 0;
+  margin-left: 20%;
+  max-width: 90%;
+  min-width: 90em;
+}
+@media (max-width: 800px) {
+  .moonwithstars-right img{
+    top: -10em;
+    max-width: 40%;
+    min-width: 40em;
+    margin-left: -60%;
+  }
+}
+
+.social-media{
+  padding-top: 2em;
+  padding-bottom: 2em;
+  margin: auto;
+}
+
+.social-media ul{
+  padding: 0;
+}
+
+.social-media li{
+  list-style: none;
+  text-align: left;
+  
+}
+
+.social-media li i{
+  padding-right: 0.5em;
+}
+
+
+/* button */
+.glow-on-hover {
+  font-family: Nasalization;
+  text-align: center;
+  width: 350px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+
+
+
+/* registration page */
+#gradient-registpage{
+  height: 200vh;
+  background:
+    url("../img/registration/ticketmoon.svg"), 
+    linear-gradient(#0c0740 0%, #070b34 44.18%, #443777 75.98%, #6a3f6e 100%);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  
+}
+
+
+
+.moonwithstars-right-registpage img{
+  position: absolute;
+  top: 0em;
+  z-index: 0;
+  margin-left: 20%;
+  max-width: 90%;
+  min-width: 90em;
+}
+@media (max-width: 800px) {
+  .moonwithstars-right-registpage img{
+    top: -10em;
+    max-width: 40%;
+    min-width: 40em;
+    margin-left: -60%;
+  }
+}
+
+.back-button{
+  margin: auto;
+  width: 100%;
+  
+}
+.back-button img{
+  position:absolute;
+  width:300px;
+  height:300px;
+  bottom:0px;
+  right:25%;
+  left:50%;
+  margin-left:-150px;
+}
+@media (max-width: 800px) {
+  .back-button img{
+    width: 200px;
+    margin-left:-100px;
+    bottom:-50px;
+  }
 }
