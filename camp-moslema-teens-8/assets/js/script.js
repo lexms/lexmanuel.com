@@ -58,13 +58,9 @@ $(window).on('resize', function(){
 $(window).on('scroll resize',function(){
   
   var $window = $(window);
-  
-
     var window_height = $window.height();
     var window_top_position = $window.scrollTop();
     var window_bottom_position = (window_top_position + window_height);
-
-
 
     var $element_moonlight = $(".ufo");
     var element_moonlight_height = $element_moonlight.outerHeight();
@@ -233,7 +229,6 @@ $(window).on('scroll resize',function(){
     }
 
     
-
 });
 
 /* 
