@@ -119,7 +119,7 @@ $(window).on('scroll resize',function(){
     var $element_gueststar = $(".gueststar-svg");
     var element_gueststar_height = $element_gueststar.outerHeight();
     var element_gueststar_top_position = $element_gueststar.offset().top;
-    var element_gueststar_bottom_position = (element_gueststar_top_position + element_gueststar_height);
+    var element_gueststar_bottom_position = (element_gueststar_top_position + element_gueststar_height) + 100;
   
     //check to see if this current container is within viewport
     if ((element_gueststar_top_position < window_bottom_position)) {

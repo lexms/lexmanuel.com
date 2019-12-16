@@ -1014,6 +1014,7 @@ html, body {
 
 /* GRADIENT 6 */
 #gradient-6{
+  min-height: 100vh;
   background: linear-gradient(#0c0740 0%, #070b34 44.18%, #443777 75.98%, #6a3f6e 100%);
 
 }
@@ -1227,9 +1228,9 @@ html, body {
 }
 @media (max-width: 800px) {
   .back-button img{
-    width: 200px;
-    margin-left:-100px;
-    bottom:-50px;
+    
+    height: 100px;
+  
   }
 }
 
@@ -1946,5 +1947,6 @@ html, body {
 
 .container-countdown svg {
   width: 100%;
+ 
 }
 

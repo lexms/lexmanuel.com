@@ -15,7 +15,7 @@
   <g id="merchandisehud" transform="translate(-361 -7075)">
     <rect id="HUD" width="1200" height="1200" transform="translate(361 7075)" fill="url(#pattern)"/>
     <g transform="matrix(1, 0, 0, 1, 361, 7075)" filter="url(#Merchandise)">
-      <text id="Merchandise-2" data-name="Merchandise" transform="translate(597.5 40)" fill="#fff" font-size="35" font-family="Arial Black" letter-spacing="0.15em"><tspan x="-171.896" y="0">MERCHANDISE</tspan></text>
+      <text id="Merchandise-2" data-name="Merchandise" transform="translate(610 40)" fill="#fff" font-size="45" font-family="Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif" letter-spacing="0.15em"><tspan x="-171.896" y="0">MERCHANDISE</tspan></text>
     </g>
   </g>
 </svg>
