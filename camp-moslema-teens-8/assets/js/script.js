@@ -2,13 +2,45 @@ $(window).on('beforeunload', function(){
   $(window).scrollTop(0);
 });
 
-$(window).on('load', function() {
+
+/* $('.hill_main').on('load', function() {
   $(".cmt").removeClass("invisible"); 
   $(".loader ").addClass("invisible");
   $(".hill_main ").addClass("slide-in-blurred-top"); 
   $(".font-hero ").addClass("slide-in-elliptic-top-fwd"); 
   $(".year_cmt ").addClass("roll-in-blurred-left"); 
+});
+ */
 
+
+
+
+
+$(window).on('load', function() {
+  var $window = $(window);
+  var window_height = $window.height();
+  var window_top_position = $window.scrollTop();
+  var window_bottom_position = (window_top_position + window_height);
+
+  var $element_competitions = $(".hill_main");
+  var element_competitions_height = $element_competitions.outerHeight();
+  var element_competitions_top_position = $element_competitions.offset().top;
+  var element_competitions_bottom_position = (element_competitions_top_position + element_competitions_height);
+
+
+  if ((element_competitions_top_position < window_bottom_position)) {
+    $(".all_hill").removeClass("invisible");
+    $(".hill_main").addClass("slide-in-blurred-top");
+    $(".font-hero ").addClass("slide-in-elliptic-top-fwd"); 
+    $(".year_cmt ").addClass("roll-in-blurred-left");  
+
+  } else {
+
+  }
+});
+
+
+$(window).on('load', function() {
   const second = 1000,
         minute = second * 60,
         hour = minute * 60,
@@ -25,11 +57,12 @@ $(window).on('load', function() {
       document.getElementById('_45').textContent = Math.floor((distance % (hour)) / (minute)),
       document.getElementById('_25-2').textContent = Math.floor((distance % (minute)) / second);
     }, second)
-  
 
 });
 
-$(window).on('resize', function(){
+
+/* merchandise */
+$(window).on('load resize', function(){
   /* set height heightscrollinside */
   if ($(window).width() >= 800) {
     var widthWindow = $(window).width();
@@ -51,12 +84,14 @@ $(window).on('resize', function(){
 });
 
 
+/* scroll animation */
 $(window).on('scroll resize',function(){
   
   var $window = $(window);
     var window_height = $window.height();
     var window_top_position = $window.scrollTop();
     var window_bottom_position = (window_top_position + window_height);
+
 
     var $element_moonlight = $(".ufo");
     var element_moonlight_height = $element_moonlight.outerHeight();
@@ -86,7 +121,6 @@ $(window).on('scroll resize',function(){
   
 
     if ((element_competitions_top_position < window_bottom_position)) {
-      $element_competitions.addClass('in-view');
       $element_competitions.removeClass("slide-out-blurred-top");
       $element_competitions.removeClass("invisible");
       $element_competitions.addClass("slide-in-blurred-top"); 
