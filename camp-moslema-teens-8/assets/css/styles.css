@@ -1021,6 +1021,7 @@ html, body {
 
 .registration{
   min-height: 100vh;
+  padding-top: 10em;
 }
 @media (max-width: 800px) {
   .registration{
