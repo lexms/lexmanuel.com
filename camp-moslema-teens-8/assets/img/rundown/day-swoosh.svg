@@ -10,6 +10,19 @@
   <g id="day-swoosh" transform="translate(184.679 -6660.873)">
     <rect id="swoosh" width="2324" height="1397.522" transform="matrix(0.999, 0.035, -0.035, 0.999, -135.906, 6660.873)" fill="url(#pattern)"/>
     <g id="day1-day2">
+    <style>
+      @font-face{
+          font-family:'Nasalization';
+          src:url("../../fonts/nasalization/onlinewebfonts.eot");
+          src:url("../../fonts/nasalization/onlinewebfonts.eot?#iefix") 
+          format("embedded-opentype"), 
+          url("../../fonts/nasalization/onlinewebfonts.woff2") format("woff2"), 
+          url("../../fonts/nasalization/onlinewebfonts.woff") format("woff"), 
+          url("../../fonts/nasalization/onlinewebfonts.ttf") format("truetype"), 
+          url("../../fonts/nasalization/onlinewebfonts.svg#NasalizationRg-Regular") 
+          format("svg")
+        }
+      </style>
       <g id="Day1" transform="translate(8 -164)">
         <rect id="rock_run_down" data-name="rock run down" width="579" height="516" transform="translate(208 6868)" fill="url(#pattern-2)"/>
         <text id="_06.30_9.00_Registration_08.30_11.30_Grand_Opening_11.30_12.45_Break_12.45_15.00_Competition_15.00_15.30_Break_15.30_17.15_Competition_17.15_19.00_Break_19.00_21.00_Talkshow" data-name="06.30 – 9.00	Registration

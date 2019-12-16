@@ -28,7 +28,22 @@ $(window).on('load', function() {
     $(".scroll-merchandise").height(heightSnap);
   }
 
-  
+  const second = 1000,
+        minute = second * 60,
+        hour = minute * 60,
+        day = hour * 24;
+
+  let countDown = new Date('Feb 28, 2020 00:00:00').getTime(),
+    x = setInterval(function() {
+
+      let now = new Date().getTime(),
+          distance = countDown - now;
+
+      document.getElementById('_74-2').textContent = Math.floor(distance / (day)),
+      document.getElementById('_87-2').textContent = Math.floor((distance % (day)) / (hour)),
+      document.getElementById('_45').textContent = Math.floor((distance % (hour)) / (minute)),
+      document.getElementById('_25-2').textContent = Math.floor((distance % (minute)) / second);
+    }, second)
   
 
 });
@@ -230,6 +245,9 @@ $(window).on('scroll resize',function(){
 
     
 });
+
+
+
 
 /* 
 $window.on('scroll resize', check_if_in_view);
