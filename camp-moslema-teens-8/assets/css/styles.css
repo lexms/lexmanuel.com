@@ -673,8 +673,8 @@ html, body {
   text-align: center;
 }
 
-.gueststar object {
-  margin-top: -9em;
+.gueststar img{
+  margin: auto;
   width: 50%;
 }
 
@@ -683,6 +683,19 @@ html, body {
     
     width: 80%;
   }
+  
+  .gueststar img {
+    margin-top: -4em;
+    width: 80%;
+  }
+}
+
+.gueststar object {
+  margin-top: -9em;
+  width: 50%;
+}
+
+@media (max-width: 800px) {
   
   .gueststar object {
     margin-top: -4em;

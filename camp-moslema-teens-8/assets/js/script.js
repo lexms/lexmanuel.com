@@ -126,15 +126,15 @@ $(window).on('scroll resize',function(){
       $element_competitions.addClass("slide-in-blurred-top"); 
 
     } else {
-      $element_competitions.addClass("slide-out-blurred-top");
+
 
     }
 
 
-    var $element_gueststar = $(".gueststar-svg");
+    var $element_gueststar = $(".gueststar");
     var element_gueststar_height = $element_gueststar.outerHeight();
     var element_gueststar_top_position = $element_gueststar.offset().top;
-    var element_gueststar_bottom_position = (element_gueststar_top_position + element_gueststar_height) + 100;
+    var element_gueststar_bottom_position = (element_gueststar_top_position + element_gueststar_height);
   
 
     if ((element_gueststar_top_position < window_bottom_position)) {
