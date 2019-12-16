@@ -9,25 +9,6 @@ $(window).on('load', function() {
   $(".font-hero ").addClass("slide-in-elliptic-top-fwd"); 
   $(".year_cmt ").addClass("roll-in-blurred-left"); 
 
-  /* set height heightscrollinside */
-  if ($(window).width() >= 800) {
-    var widthWindow = $(window).width();
-    var widthSnap = 0.7 * widthWindow;
-    var heightSnap = widthSnap;
-    /* var heightscrollsnap = parseInt($(".scroll-merchandise").css( "height")); */
-    var heightscrollinside = heightSnap - 250;
-    $(".scroll-merchandise-children-box").height(heightscrollinside);
-    $(".scroll-merchandise").height(heightSnap);
-  }else{
-    var widthWindow = $(window).width();
-    var widthSnap = 0.7 * widthWindow;
-    var heightSnap = 600/334 * widthSnap;
-    /* var heightscrollsnap = parseInt($(".scroll-merchandise").css( "height")); */
-    var heightscrollinside = heightSnap - 150;
-    $(".scroll-merchandise-children-box").height(heightscrollinside);
-    $(".scroll-merchandise").height(heightSnap);
-  }
-
   const second = 1000,
         minute = second * 60,
         hour = minute * 60,
