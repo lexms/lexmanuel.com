@@ -82,7 +82,7 @@ $(window).on('scroll resize',function(){
     var element_moonlight_top_position = $element_moonlight.offset().top +100;
     var element_moonlight_bottom_position = (element_moonlight_top_position + element_moonlight_height);
   
-    //check to see if this current container is within viewport
+
     if ((element_moonlight_top_position < window_bottom_position)) {
       $(".moonlight").removeClass("slide-out-blurred-top");
       $(".moonlight").removeClass("invisible");
@@ -103,7 +103,7 @@ $(window).on('scroll resize',function(){
     var element_competitions_top_position = $element_competitions.offset().top;
     var element_competitions_bottom_position = (element_competitions_top_position + element_competitions_height);
   
-    //check to see if this current container is within viewport
+
     if ((element_competitions_top_position < window_bottom_position)) {
       $element_competitions.addClass('in-view');
       $element_competitions.removeClass("slide-out-blurred-top");
@@ -121,15 +121,14 @@ $(window).on('scroll resize',function(){
     var element_gueststar_top_position = $element_gueststar.offset().top;
     var element_gueststar_bottom_position = (element_gueststar_top_position + element_gueststar_height) + 100;
   
-    //check to see if this current container is within viewport
+
     if ((element_gueststar_top_position < window_bottom_position)) {
-      $(".gueststar-svg").removeClass("slide-out-bck-center ");
-      $(".gueststar-svg").removeClass("invisible");
-      $(".gueststar-svg").addClass("bounce-in-fwd"); 
+      $(".gueststar").addClass("bounce-in-fwd"); 
+      $(".gueststar").removeClass("invisible");
 
     } else {
-      $(".gueststar-svg ").addClass("slide-out-bck-center ");
-      $(".gueststar-svg").removeClass("bounce-in-fwd"); 
+ 
+      $(".gueststar").removeClass("bounce-in-fwd"); 
 
     }
 
@@ -138,7 +137,7 @@ $(window).on('scroll resize',function(){
     var element_rundown_top_position = $element_rundown.offset().top;
     var element_rundown_bottom_position = (element_rundown_top_position + element_rundown_height);
   
-    //check to see if this current container is within viewport
+
     if ((element_rundown_top_position < window_bottom_position)) {
       $(".swoosh").removeClass("slide-out-bck-center");
       $(".swoosh").removeClass("invisible");
@@ -155,7 +154,7 @@ $(window).on('scroll resize',function(){
     var element_whattobring_top_position = $element_whattobring.offset().top;
     var element_whattobring_bottom_position = (element_whattobring_top_position + element_whattobring_height);
   
-    //check to see if this current container is within viewport
+
     if ((element_whattobring_top_position < window_bottom_position)) {
       $(".whattobring").removeClass("invisible");
       $(".whattobring").addClass("jello-diagonal-2"); 
@@ -170,7 +169,7 @@ $(window).on('scroll resize',function(){
     var element_prohibitedthings_top_position = $element_prohibitedthings.offset().top;
     var element_prohibitedthings_bottom_position = (element_prohibitedthings_top_position + element_prohibitedthings_height);
   
-    //check to see if this current container is within viewport
+
     if ((element_prohibitedthings_top_position < window_bottom_position)) {
       $(".prohibitedthings").removeClass("invisible");
       $(".prohibitedthings").addClass("jello-diagonal-2"); 
@@ -186,7 +185,7 @@ $(window).on('scroll resize',function(){
     var element_scrollmerchandise_top_position = $element_scrollmerchandise.offset().top;
     var element_scrollmerchandise_bottom_position = (element_scrollmerchandise_top_position + element_scrollmerchandise_height);
   
-    //check to see if this current container is within viewport
+
     if ((element_scrollmerchandise_top_position < window_bottom_position)) {
       $(".bigearth").removeClass("invisible");
       $(".bigearth").addClass("heartbeat"); 
@@ -201,7 +200,7 @@ $(window).on('scroll resize',function(){
     var element_map_top_position = $element_map.offset().top;
     var element_map_bottom_position = (element_map_top_position + element_map_height);
   
-    //check to see if this current container is within viewport
+
     if ((element_map_top_position < window_bottom_position)) {
       $(".map").removeClass("invisible");
       $(".map").addClass("jello-horizontal"); 
@@ -217,7 +216,7 @@ $(window).on('scroll resize',function(){
     var element_registbox_top_position = $element_registbox.offset().top;
     var element_registbox_bottom_position = (element_registbox_top_position + element_registbox_height);
   
-    //check to see if this current container is within viewport
+
     if ((element_registbox_top_position < window_bottom_position)) {
       $(".regist-box").removeClass("invisible");
       $(".regist-box").addClass("shake-lr"); 
@@ -233,7 +232,7 @@ $(window).on('scroll resize',function(){
     var element_campdaimuda_top_position = $element_campdaimuda.offset().top;
     var element_campdaimuda_bottom_position = (element_campdaimuda_top_position + element_campdaimuda_height);
   
-    //check to see if this current container is within viewport
+
     if ((element_campdaimuda_top_position < window_bottom_position)) {
       $(".campdaimuda").removeClass("invisible");
       $(".campdaimuda").addClass("vibrate-2"); 
