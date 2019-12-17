@@ -1204,34 +1204,43 @@ html, body {
 
 /* registration page */
 #gradient-registpage{
-  height: 200vh;
+  height: 150vh;
   background:
-    url("../img/registration/ticketmoon.svg"), 
+    url("../img/registration/ticket-regis-page.svg"), 
     linear-gradient(#0c0740 0%, #070b34 44.18%, #443777 75.98%, #6a3f6e 100%);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: contain;
   
 }
+.form-regist iframe{
+  width: 50%;
+  height: 90vh;
+}
+@media (max-width: 800px) {
+  .form-regist iframe{
+    width: 100%;
+  }
+}
 
 
-
-.moonwithstars-right-registpage img{
+.moonwithstars-right-reg img{
   position: absolute;
-  top: 0em;
-  z-index: 0;
+  top: -20em;
+  z-index: -1;
   margin-left: 20%;
   max-width: 90%;
   min-width: 90em;
 }
 @media (max-width: 800px) {
-  .moonwithstars-right-registpage img{
-    top: -10em;
+  .moonwithstars-right-reg img{
+    top: -7em;
     max-width: 40%;
     min-width: 40em;
     margin-left: -60%;
   }
 }
+
 
 .back-button{
   margin: auto;
