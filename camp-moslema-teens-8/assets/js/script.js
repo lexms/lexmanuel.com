@@ -3,19 +3,11 @@ $(window).on('beforeunload', function(){
 });
 
 
-/* $('.hill_main').on('load', function() {
-  $(".cmt").removeClass("invisible"); 
-  $(".loader ").addClass("invisible");
-  $(".hill_main ").addClass("slide-in-blurred-top"); 
-  $(".font-hero ").addClass("slide-in-elliptic-top-fwd"); 
-  $(".year_cmt ").addClass("roll-in-blurred-left"); 
-});
- */
 
 
 
 
-
+/* loading screen */
 $(window).on('load', function() {
   var $window = $(window);
   var window_height = $window.height();
@@ -29,8 +21,10 @@ $(window).on('load', function() {
 
 
   if ((element_competitions_top_position < window_bottom_position)) {
+    $(".cmt").removeClass("invisible"); 
+    $(".loader ").addClass("invisible");
     $(".all_hill").removeClass("invisible");
-    $(".hill_main").addClass("slide-in-blurred-top");
+    $(".hill_main").addClass("slide-in-blurred-top-delay");
     $(".font-hero ").addClass("slide-in-elliptic-top-fwd"); 
     $(".year_cmt ").addClass("roll-in-blurred-left");  
 
@@ -39,7 +33,7 @@ $(window).on('load', function() {
   }
 });
 
-
+/* countdown */
 $(window).on('load', function() {
   const second = 1000,
         minute = second * 60,
@@ -92,10 +86,24 @@ $(window).on('scroll resize',function(){
     var window_top_position = $window.scrollTop();
     var window_bottom_position = (window_top_position + window_height);
 
+    var $element_countdown = $(".container-countdown svg");
+    var element_countdown_height = $element_countdown.outerHeight();
+    var element_countdown_top_position = $element_countdown.offset().top;
+    var element_countdown_bottom_position = (element_countdown_top_position + element_countdown_height );
+  
+
+    if ((element_countdown_top_position < window_bottom_position)) {
+      $(".container-countdown").removeClass("invisible");
+      $(".container-countdown svg").addClass("slide-in-blurred-left");     
+    } else {
+      $(".container-countdown").addClass("invisible");
+      $(".container-countdown svg").removeClass("slide-in-blurred-left");;
+
+    }
 
     var $element_moonlight = $(".ufo");
     var element_moonlight_height = $element_moonlight.outerHeight();
-    var element_moonlight_top_position = $element_moonlight.offset().top +100;
+    var element_moonlight_top_position = $element_moonlight.offset().top + 200;
     var element_moonlight_bottom_position = (element_moonlight_top_position + element_moonlight_height);
   
 
@@ -126,7 +134,7 @@ $(window).on('scroll resize',function(){
       $element_competitions.addClass("slide-in-blurred-top"); 
 
     } else {
-
+      $element_competitions.removeClass("slide-in-blurred-top"); 
 
     }
 
@@ -144,6 +152,7 @@ $(window).on('scroll resize',function(){
     } else {
  
       $(".gueststar").removeClass("bounce-in-fwd"); 
+      $(".gueststar").addClass("invisible");
 
     }
 
