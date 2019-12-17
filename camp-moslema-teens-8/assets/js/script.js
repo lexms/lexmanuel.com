@@ -88,7 +88,7 @@ $(window).on('scroll resize',function(){
 
     var $element_countdown = $(".container-countdown svg");
     var element_countdown_height = $element_countdown.outerHeight();
-    var element_countdown_top_position = $element_countdown.offset().top;
+    var element_countdown_top_position = $element_countdown.offset().top  + 200;
     var element_countdown_bottom_position = (element_countdown_top_position + element_countdown_height );
   
 
@@ -108,17 +108,18 @@ $(window).on('scroll resize',function(){
   
 
     if ((element_moonlight_top_position < window_bottom_position)) {
-      $(".moonlight").removeClass("slide-out-blurred-top");
       $(".moonlight").removeClass("invisible");
       $(".moonlight").addClass("slide-in-blurred-top"); 
 
-      $(".ufo").removeClass("slide-out-blurred-top");
       $(".ufo ").removeClass("invisible");
       $(".ufo").addClass("tilt-in-fwd-tl"); 
       
     } else {
-      $(".moonlight ").addClass("slide-out-blurred-top");;
-      $(".ufo ").addClass("slide-out-blurred-top");
+      $(".moonlight").addClass("invisible");
+      $(".moonlight").removeClass("slide-in-blurred-top"); 
+
+      $(".ufo ").addClass("invisible");
+      $(".ufo").removeClass("tilt-in-fwd-tl"); 
 
     }
 
