@@ -6,16 +6,21 @@
     --primaryBlack:#282828;
     --backgroundColorSecond:#EEEEEE;
     --backgroundColorPrimary:#F5F5F6;
+    --stabiloColor:#D1D5FF;
 }
 
+.highlight{
+    background-color: var(--stabiloColor);
+}
 
 html{
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
+    scroll-behavior: smooth;
     background-color: var(--backgroundColorPrimary);
 }
 section{
     height: 100vh;
-    padding: 100px 80px;
+    padding: 50px 80px;
     /* width: 100vw; */
     scroll-snap-align: start;
 }
@@ -25,11 +30,15 @@ section.hero{
 }
 @media (max-width: 800px) {
 	section {
-		padding: 30px 20px;
+        padding: 30px 20px;    
     }
     section.hero{
         padding-right: 0px;
     }
+    #aboutDescription{
+        height: inherit;
+    }
+
 }
 .grid-container-2 {
     display: grid;
@@ -58,8 +67,6 @@ section.hero{
     font-size: 36px;
     line-height: 43px;
 }
-
-
 .normalText{
     font-family: Futura Bk BT;
     font-style: normal;
@@ -72,7 +79,7 @@ section.hero{
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
-    line-height: 22px;
+    line-height: 1.5;
 }
 @media (max-width: 800px) {
     .normalText{
@@ -112,6 +119,7 @@ header{
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
+        padding-bottom: 1em;
         padding-right: 20px;
     }
     header a {
@@ -156,6 +164,7 @@ header a{
 }
 .primaryBox{
     position: absolute;
+    
     top: 80%;
     left: -10%;
     width: 200px;
@@ -182,5 +191,40 @@ header a{
         width: 100px;
         height: 100px; 
         left: -20%;
+        top: 90%;
     }
+}
+
+/* about Description */
+#aboutDescription{
+    display: flex;
+    align-items: center;
+}
+#aboutDescription .content-desc{
+    padding: 0em 2em;
+}
+
+#aboutDescription img{
+    z-index: 99;
+    height: 461px;
+    width: 400px;
+}
+#aboutDescription hr{
+    border: 2px solid var(--primaryColor);
+}
+
+@media (max-width: 800px) {
+    #aboutDescription{
+        display: flex;
+        flex-direction: column;
+    }
+    #aboutDescription .content-desc{
+        padding: 0em 0em;
+    }
+    #aboutDescription img{
+        align-self: center;
+        height: 231px;
+        width: 200px;
+    }
+    
 }
