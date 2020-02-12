@@ -166,6 +166,7 @@ header a{
 
 @media (max-width: 800px) {
     .hero-content-area{
+        align-items: flex-start;
         justify-content: flex-end;
     }
     .heroRight{
