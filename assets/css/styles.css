@@ -13,6 +13,7 @@
     background-color: var(--stabiloColor);
 }
 
+
 html{
     scroll-snap-type: y proximity;
     scroll-behavior: smooth;
@@ -28,21 +29,27 @@ section.hero{
     padding-top: 20px;
     padding-right: 0px;
 }
+section.dscHighlights{
+    padding: 0px;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+section.dscunikom{
+    padding: 0px;
+    margin-right: -15px;
+    margin-left: -15px;
+}
 @media (max-width: 800px) {
 	section {
         padding: 30px 20px;    
     }
-    section.hero{
-        padding-right: 0px;
-    }
     #aboutDescription{
         height: inherit;
     }
+    #dscHighlights{
+        height: inherit;
+    }
 
-}
-.grid-container-2 {
-    display: grid;
-    grid-template-columns: auto auto;
 }
 
 /* Display */
@@ -164,15 +171,12 @@ header a{
 }
 .primaryBox{
     position: absolute;
-    
     top: 80%;
     left: -10%;
     width: 200px;
     height: 200px;
     background-color: var(--primaryColor);
 }
-
-
 @media (max-width: 800px) {
     .hero-content-area{
         align-items: flex-start;
@@ -194,16 +198,23 @@ header a{
         top: 90%;
     }
 }
-
 /* about Description */
 #aboutDescription{
+    position: relative;
     display: flex;
     align-items: center;
+}
+.primaryLightBox{
+    position: absolute;
+    top: -10vh;
+    left: 90vw;
+    width: 70px;
+    height: 100px;
+    background-color: var(--primaryLightColor);
 }
 #aboutDescription .content-desc{
     padding: 0em 2em;
 }
-
 #aboutDescription img{
     z-index: 99;
     height: 461px;
@@ -212,8 +223,7 @@ header a{
 #aboutDescription hr{
     border: 2px solid var(--primaryColor);
 }
-
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
     #aboutDescription{
         display: flex;
         flex-direction: column;
@@ -226,5 +236,216 @@ header a{
         height: 231px;
         width: 200px;
     }
-    
+    .primaryLightBox{
+        position: absolute;
+        top: -10vh;
+        left: 90vw;
+        width: 20px;
+
+    }
 }
+/* dsc highlights */
+.grid-container-2{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+@media (max-width: 800px) {
+    .grid-container-2{
+        grid-template-columns: 100%;
+    }
+}
+.dscHighlightsLeft{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: var(--primaryDarkColor);
+    color: var(--primaryTextColor);
+}
+.multibox-3{
+    position: absolute;
+    right: -50px;
+    width: 100px;
+    height: 50px;
+    background-color: var(--primaryLightColor);
+}
+.dscHighlightsLeft .avatar {
+    border-radius: 50%;
+    object-fit: fill;
+    width: 200px;
+    height: 200px;
+}
+
+
+
+@media (max-width: 800px) {
+    .dscHighlightsLeft{
+        padding: 30px 35px;
+    }
+}
+.dscHighlightsRight{
+    position: relative;
+    overflow: hidden;
+    min-height: 50vh;
+}
+.dscunikomLeft{
+    position: relative;
+    overflow:hidden;
+    min-height: 50vh;
+}
+.dscunikomRight{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 15px 50px;
+    color: var(--primaryTextColor);
+    background-color: var(--primaryLightColor);
+}
+@media (max-width: 800px) {
+    .dscunikomRight{
+        padding: 30px 35px;
+    }
+}
+.learnMore{
+    position: relative;
+}
+.learnMore a{
+    color: var(--primaryTextColor);
+}
+.multibox-1{
+    position: absolute;
+    top: -70%;
+    right: 10%;
+    width: 50px;
+    height: 50px;
+    background-color: var(--primaryColor);
+}
+.multibox-2{
+    position: absolute;
+    top: -130%;
+    right: 25%;
+    width: 50px;
+    height: 50px;
+    background-color: var(--primaryDarkColor);
+}
+figure{
+    position: absolute;
+    z-index: -99;
+    top: -20px;
+    left: -40px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    /*animation*/
+
+    animation: slideShow 24s linear infinite 0s;
+    -o-animation: slideShow 24s linear infinite 0s;
+    -moz-animation: slideShow 24s linear infinite 0s;
+    -webkit-animation: slideShow 24s linear infinite 0s;
+}
+.pic-1{
+    opacity: 1;
+    background: url(../img/dsc/summit.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.pic-2 {
+    animation-delay: 6s;
+    -o-animation-delay: 6s;
+    -moz--animation-delay: 6s;
+    -webkit-animation-delay: 6s;
+    background: url(../img/dsc/alex_top_dsc_leads.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+  .pic-3 {
+    animation-delay: 12s;
+    -o-animation-delay: 12s;
+    -moz--animation-delay: 12s;
+    -webkit-animation-delay: 12s;
+    background: url(../img/dsc/dsc_cultural.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+  .pic-4 {
+    animation-delay: 18s;
+    -o-animation-delay: 18s;
+    -moz--animation-delay: 18s;
+    -webkit-animation-delay: 18s;
+    background: url(../img/dsc/kl_summit.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+.pic-5{
+    opacity: 1;
+    background: url(../img/dsc/dscinfosesion2.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.pic-6 {
+    animation-delay: 6s;
+    -o-animation-delay: 6s;
+    -moz--animation-delay: 6s;
+    -webkit-animation-delay: 6s;
+    background: url(../img/dsc/dscml.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.pic-7 {
+    animation-delay: 12s;
+    -o-animation-delay: 12s;
+    -moz--animation-delay: 12s;
+    -webkit-animation-delay: 12s;
+    background: url(../img/dsc/dscfrontend.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.pic-8 {
+    animation-delay: 18s;
+    -o-animation-delay: 18s;
+    -moz--animation-delay: 18s;
+    -webkit-animation-delay: 18s;
+    background: url(../img/dsc/dscgolang.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.pic-9 {
+    animation-delay: 22s;
+    -o-animation-delay: 22s;
+    -moz--animation-delay: 22s;
+    -webkit-animation-delay: 22s;
+    background: url(../img/dsc/dsckotlin.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+    
+  
+/*  */
+@keyframes slideShow{0%{opacity:0;transform:scale(1);-ms-transform:scale(1)}5%{opacity:1}25%{opacity:1}30%{opacity:0;transform:scale(1.1);-ms-transform:scale(1.1)}100%{opacity:0;transform:scale(1);-ms-transformm:scale(1)}}@-o-keyframes slideShow{0%{opacity:0;-o-transform:scale(1)}5%{opacity:1}25%{opacity:1}30%{opacity:0;-o-transform:scale(1.1)}100%{opacity:0;-o-transformm:scale(1)}}@-moz-keyframes slideShow{0%{opacity:0;-moz-transform:scale(1)}5%{opacity:1}25%{opacity:1}30%{opacity:0;-moz-transform:scale(1.1)}100%{opacity:0;-moz-transformm:scale(1)}}@-webkit-keyframes slideShow{0%{opacity:0;-webkit-transform:scale(1)}5%{opacity:1}25%{opacity:1}30%{opacity:0;-webkit-transform:scale(1.1)}100%{opacity:0;-webkit-transformm:scale(1)}}
+/*  */
+
