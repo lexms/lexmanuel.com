@@ -45,6 +45,7 @@ section.dscTechFest{
     padding: 0px;
     margin-right: -15px;
     margin-left: -15px;
+    scroll-snap-align: end;
 }
 @media (max-width: 800px) {
 	section {
