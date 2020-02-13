@@ -89,6 +89,10 @@ section.dscunikom{
     line-height: 1.5;
 }
 @media (max-width: 800px) {
+    .titleText{
+
+        font-size: 30px;
+    }
     .normalText{
         font-size: 17px;
     }
@@ -217,7 +221,7 @@ header a{
 }
 #aboutDescription img{
     z-index: 99;
-    height: 461px;
+/*     height: 461px; */
     width: 400px;
 }
 #aboutDescription hr{
@@ -254,13 +258,16 @@ header a{
         grid-template-columns: 100%;
     }
 }
+.dscHighlights{
+    overflow: hidden;
+}
 .dscHighlightsLeft{
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding: 15px 50px;
+    padding: 15px 55px 15px 50px;
     background-color: var(--primaryDarkColor);
     color: var(--primaryTextColor);
 }
@@ -273,16 +280,30 @@ header a{
 }
 .dscHighlightsLeft .avatar {
     border-radius: 50%;
-    object-fit: fill;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
 }
 
-
+.dscHighlightsLeft img {
+    object-fit: cover;
+}
 
 @media (max-width: 800px) {
     .dscHighlightsLeft{
         padding: 30px 35px;
+    }
+    .multibox-3{
+        position: absolute;
+        right: -50px;
+        width: 80px;
+        height: 30px;
+        background-color: var(--primaryLightColor);
+    }
+    .dscHighlightsLeft .avatar {
+        border-radius: 50%;
+        object-fit: fill;
+        width: 100px;
+        height: 100px;
     }
 }
 .dscHighlightsRight{
