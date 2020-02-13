@@ -195,6 +195,9 @@ header a{
     height: 200px;
     background-color: var(--primaryColor);
 }
+.profilePicture{
+    width: 200px;
+}
 @media (max-width: 800px) {
     .hero-content-area{
         align-items: flex-start;
