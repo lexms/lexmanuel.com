@@ -57,9 +57,7 @@ section.dscTechFest{
     #dscHighlights{
         height: inherit;
     }
-    #dscTechFest{
-        height: inherit;
-    }
+  
 
 }
 
@@ -84,19 +82,19 @@ section.dscTechFest{
     font-weight: normal;
     font-size: 36px;
     line-height: 43px;
-    margin-bottom: 0.5em;
+    padding-bottom: 0.2em;
+    margin-bottom: 0.3em;
 }
 .normalText{
     font-family: Futura Bk BT;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 29px;
     margin-bottom: 0.2em;
 }
 .smallText{
     margin-top: 1.5em;
-    
     font-family: Futura Bk BT;
     font-style: normal;
     font-weight: normal;
@@ -105,17 +103,19 @@ section.dscTechFest{
 }
 @media (max-width: 800px) {
     .titleText{
-
         font-size: 30px;
     }
     .normalText{
-        font-size: 17px;
+        font-size: 16px;
     }
     .subheadingText{
+        line-height: 30px;
         font-size: 18px;
+        margin-bottom: 0em;
     }
     .smallText{
-        font-size: 14px;    
+        font-size: 14px;
+        margin-top: 0.5em;    
     }
 }
 /* link */
@@ -370,9 +370,7 @@ header a{
     background-color: var(--primaryDarkColor);
 }
 
-.dscTechFest{
 
-}
 .dscTechFestRight{
     position: relative;
     overflow:hidden;
@@ -392,6 +390,9 @@ header a{
     align-self: center;
     width: 400px;
     margin-top: 2em;
+}
+.dscTechFestLeft .subheadingText{
+    border-bottom: solid 3px var(--primaryLightColor); 
 }
 @media (max-width: 800px) {
     .dscTechFestLeft{
