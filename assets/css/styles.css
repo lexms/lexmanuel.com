@@ -576,3 +576,76 @@ figure{
 @keyframes slideShow{0%{opacity:0;transform:scale(1);-ms-transform:scale(1)}5%{opacity:1}25%{opacity:1}30%{opacity:0;transform:scale(1.1);-ms-transform:scale(1.1)}100%{opacity:0;transform:scale(1);-ms-transformm:scale(1)}}@-o-keyframes slideShow{0%{opacity:0;-o-transform:scale(1)}5%{opacity:1}25%{opacity:1}30%{opacity:0;-o-transform:scale(1.1)}100%{opacity:0;-o-transformm:scale(1)}}@-moz-keyframes slideShow{0%{opacity:0;-moz-transform:scale(1)}5%{opacity:1}25%{opacity:1}30%{opacity:0;-moz-transform:scale(1.1)}100%{opacity:0;-moz-transformm:scale(1)}}@-webkit-keyframes slideShow{0%{opacity:0;-webkit-transform:scale(1)}5%{opacity:1}25%{opacity:1}30%{opacity:0;-webkit-transform:scale(1.1)}100%{opacity:0;-webkit-transformm:scale(1)}}
 /*  */
 
+/* contact */
+.contactBox{
+    display: flex;
+    height: 80vh;
+    flex-wrap: wrap;
+    padding-right: 80px;
+    justify-content: center;
+}
+.contactBox a{
+    opacity: 1;
+    color: white;
+}
+.contactBox .box-4 a {
+    opacity: 1;
+    color: var(--primaryLightColor);
+}
+@media (max-width: 800px) {
+    .contactBox{
+        padding-right: 20px;
+    }
+}
+
+.box-1, .box-2, .box-3, .box-4, .box-5, .box-6{
+    position: relative; 
+    text-align: center;
+    display: flex;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    perspective: 900px;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+  
+}
+
+@media (max-width: 800px) {
+    .box-1 .fa-4x, .box-2 .fa-4x, .box-3 .fa-4x, .box-4 .fa-4x, .box-5 .fa-4x{
+        font-size: 2em;
+    }
+}
+
+.box-1:hover, .box-2:hover, .box-3:hover, .box-4:hover, .box-5:hover, .box-6:hover{
+    transform: rotateY(-180deg);
+
+}
+.contactBox .back{
+    transform: rotateY(-180deg);
+}
+.contactBox .front ,.contactBox .back{
+    position: absolute;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+
+.box-1{
+    background-color: var(--primaryColor);  
+}
+.box-2{
+    background-color: var(--primaryLightColor);  
+}
+.box-3{
+    background-color: var(--primaryBlack);  
+}
+.box-4{
+    background-color: var(--stabiloColor);  
+}
+.box-5{
+    background-color: var(--primaryDarkColor);  
+}
+.box-6{
+    background-color: var(--backgroundColorSecond);  
+}
