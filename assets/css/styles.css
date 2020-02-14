@@ -20,6 +20,7 @@
     url("../fonts/futura_bk/onlinewebfonts.woff") format("woff"), /* chrome、firefox */
     url("../fonts/futura_bk/onlinewebfonts.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
     url("../fonts/futura_bk/onlinewebfonts.svg#Futura Book BT") format("svg"); /* iOS 4.1- */
+    font-display: swap;
 }
 @font-face {font-family: "Futura Md BT";
     src: url("../fonts/futura_md/onlinewebfonts.eot"); /* IE9*/
@@ -28,6 +29,7 @@
     url("../fonts/futura_md/onlinewebfonts.woff") format("woff"), /* chrome、firefox */
     url("../fonts/futura_md/onlinewebfonts.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
     url("../fonts/futura_md/onlinewebfonts.svg#Futura Book BT") format("svg"); /* iOS 4.1- */
+    font-display: swap;
 }
 
 html{
@@ -107,6 +109,7 @@ section.dscTechFest{
     font-weight: normal;
     font-size: 22px;
     line-height: 29px;
+    padding-bottom: 0.3em;
     margin-bottom: 0.2em;
 }
 .smallText{
