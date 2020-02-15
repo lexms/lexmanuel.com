@@ -104,16 +104,18 @@ section.dscTechFest{
     margin-bottom: 0.3em;
 }
 .normalText{
+    opacity: 0.9;
     font-family: Futura Bk BT;
     font-style: normal;
     font-weight: normal;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 29px;
+    margin-top: 0.5em;
     padding-bottom: 0.3em;
     margin-bottom: 0.2em;
 }
 .smallText{
-    margin-top: 1.5em;
+    margin-top: 0.3em;
     font-family: Futura Bk BT;
     font-style: normal;
     font-weight: normal;
@@ -577,6 +579,9 @@ figure{
 /*  */
 
 /* contact */
+section.contact{
+    height: inherit;
+}
 .contactBox{
     display: flex;
     height: 80vh;
@@ -648,4 +653,48 @@ figure{
 }
 .box-6{
     background-color: var(--backgroundColorSecond);  
+}
+
+section.pageMyWork{
+    height: initial;
+}
+
+section.myWork{
+    height: inherit;
+}
+
+.myWork{
+    display: grid;
+    grid-template-columns: 17% auto;
+    color: var(--primaryTextColor);
+}
+
+.myWork a{
+    color: var(--stabiloColor);
+}
+
+.myWork .side{
+    color: var(--primaryBlack);
+}
+.myWork .main>div{
+    padding: 25px 25px;
+}
+@media (max-width: 800px) {
+    .myWork .main>div{
+        padding: 15px 15px;
+    } 
+}
+
+
+.myWork .smallText{
+    color: var(--stabiloColor);
+}
+
+.myWorkProgramming{
+    background-color: var(--primaryDarkColor);
+    
+}
+
+.myWorkDesign{
+    background-color: var(--primaryLightColor);
 }
