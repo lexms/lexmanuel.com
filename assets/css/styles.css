@@ -655,20 +655,19 @@ section.contact{
     background-color: var(--backgroundColorSecond);  
 }
 
-section.pageMyWork{
-    height: initial;
-}
 
-section.myWork{
+section.hero.pageMyWork {
     height: inherit;
+    padding-bottom: 0px;
 }
-
+section.hero.pageMyWor header{
+    padding-bottom: 0px;
+}
 .myWork{
     display: grid;
     grid-template-columns: 17% auto;
     color: var(--primaryTextColor);
 }
-
 .myWork a{
     color: var(--stabiloColor);
 }
