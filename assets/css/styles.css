@@ -656,11 +656,12 @@ section.contact{
 }
 
 
-section.hero.pageMyWork {
+section.myWork{
     height: inherit;
-    padding-bottom: 0px;
 }
-section.hero.pageMyWor header{
+
+section.pageMyWork{
+    height: initial;
     padding-bottom: 0px;
 }
 .myWork{
@@ -668,6 +669,7 @@ section.hero.pageMyWor header{
     grid-template-columns: 17% auto;
     color: var(--primaryTextColor);
 }
+
 .myWork a{
     color: var(--stabiloColor);
 }
