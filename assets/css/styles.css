@@ -88,14 +88,14 @@ section.dscTechFest{
 
 /* FONT */
 .titleText{
-    font-family: Futura Md BT;
+    font-family: Futura Md BT, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 64px;
     line-height: 77px;
 }
 .subheadingText{
-    font-family: Futura Md BT;
+    font-family: Futura Md BT , sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 36px;
@@ -105,7 +105,7 @@ section.dscTechFest{
 }
 .normalText{
     opacity: 0.9;
-    font-family: Futura Bk BT;
+    font-family: Futura Bk BT , sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -116,7 +116,7 @@ section.dscTechFest{
 }
 .smallText{
     margin-top: 0.3em;
-    font-family: Futura Bk BT;
+    font-family: Futura Bk BT, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
