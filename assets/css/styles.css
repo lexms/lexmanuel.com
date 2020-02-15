@@ -701,7 +701,6 @@ section.pageMyWork{
 }
 
 section.resume{
-    height: initial;
     padding: 0px;
 }
 section.resume button:hover{
