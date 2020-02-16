@@ -188,6 +188,10 @@ header a{
     /* height   : 71.46px; */
 }
 /* hero-content-area  */
+.heroLeft{
+    opacity: 0;
+    animation: 1s slidefade 0.5s forwards;
+}
 .hero-content-area{
   display: flex;
   justify-content: space-between;
@@ -206,7 +210,47 @@ header a{
 .heroRight .subheadingText{
     color: var(--primaryTextColor);
     text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
-}.heroRight .smallText{
+}
+.mentor{
+    opacity: 0;
+    animation: 0.7s slidefade 0.7s forwards;
+}
+.ai{
+    opacity: 0;
+    animation: 0.7s slidefade 1.4s forwards;
+}
+.designer{
+    opacity: 0;
+    animation: 0.7s slidefade 2.1s forwards;
+}
+.photographer{
+    opacity: 0;
+    animation: 0.7s slidefade 2.8s forwards;
+}
+.cynophilist{
+    opacity: 0;
+    animation: 0.7s slidefade 3.5s forwards;
+}
+.heroRight a{
+    margin-left: 20px;
+    opacity: 0;
+    animation: 1s fade 4.2s forwards;
+}
+
+
+@keyframes slidefade {
+	100% {
+		margin-left: 20px;
+        opacity: 1;
+	}
+}
+@keyframes fade {
+	100% {
+        opacity: 1;
+	}
+}
+
+.heroRight .smallText{
     color: var(--primaryLightColor);
 }
 .primaryBox{
