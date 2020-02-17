@@ -24,7 +24,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 15px;
+    padding: 0px 15px 15px 15px;
     margin: -15px -15px 0px -15px;
     animation: 2s mainColor 0.5s linear;
 }
