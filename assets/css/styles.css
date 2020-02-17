@@ -29,7 +29,32 @@
     animation: 2s mainColor 0.5s linear;
 }
 .openingScreen .smallLogo{
-    display: none;
+    opacity: 0;
+    position: absolute;
+    transition-property: all;
+    animation: 2s fadeInOpening 1.4s linear forwards;
+}
+.openingScreen .welcome{
+    position: absolute;
+    opacity: 1;
+    animation: 1.5s fadeOutOpening 0s linear forwards;
+}
+
+@keyframes fadeInOpening{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes fadeOutOpening{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
 }
 @keyframes mainColor{
     10%{

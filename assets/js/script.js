@@ -2,10 +2,16 @@ $(window).on('load', function(){
     $(window).scrollTop(0)
 
 })
-setTimeout(function(){ 
-    $(".welcome").css("display", "none")
-    $(".smallLogo").css("display", "block")
-}, 2000)
+// setTimeout(function(){ 
+//     $(".welcome").css({
+//         "opacity":"0",
+//         "display":"none"
+//     })
+//     $(".smallLogo").css({
+//         "opacity":"1",
+//         "display":"block"
+//     })
+// }, 1500)
 
 setTimeout(function(){ 
     $([document.documentElement, document.body]).animate({
