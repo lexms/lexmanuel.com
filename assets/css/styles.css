@@ -24,9 +24,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0px;
+    padding: 15px;
     margin: -15px -15px 0px -15px;
     animation: 2s mainColor 0.5s linear;
+}
+.openingScreen .smallLogo{
+    display: none;
 }
 @keyframes mainColor{
     10%{
@@ -248,34 +251,34 @@ header a{
     
 }
 .mentor-animation{
-    animation: 0.7s slidefade 0.7s forwards;
+    animation: 0.7s slidefade 0.5s forwards;
 }
 .ai{
     opacity: 0;
     
 }
 .ai-animation{
-    animation: 0.7s slidefade 1.4s forwards;
+    animation: 0.7s slidefade 1.0s forwards;
 }
 .designer{
     opacity: 0;
 }
 .designer-animation{
-    animation: 0.7s slidefade 2.1s forwards;
+    animation: 0.7s slidefade 1.5s forwards;
 
 }
 .photographer{
     opacity: 0;
 }
 .photographer-animation{
-    animation: 0.7s slidefade 2.8s forwards;
+    animation: 0.7s slidefade 2.0s forwards;
 
 }
 .cynophilist{
     opacity: 0;
 }
 .cynophilist-animation{
-    animation: 0.7s slidefade 3.5s forwards;
+    animation: 0.7s slidefade 2.5s forwards;
     
 }
 .heroRight a{
@@ -284,7 +287,7 @@ header a{
     
 }
 .heroRight-animation{
-    animation: 1s fade 4.2s forwards;
+    animation: 1s fade 3.1s forwards;
 }
 
 
@@ -304,13 +307,14 @@ header a{
     color: var(--primaryLightColor);
 }
 .primaryBox{
+    opacity: 0;
     position: absolute;
     top: 80%;
     left: -10%;
     width: 200px;
     height: 200px;
     background-color: var(--primaryColor);
-    transition: all 0.5 linear ;
+    transition: opacity 1s ease-in-out;
 }
 .profilePicture{
     width: 200px;
