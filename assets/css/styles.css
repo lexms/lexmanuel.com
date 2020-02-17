@@ -12,6 +12,9 @@
 .highlight{
     background-color: var(--stabiloColor);
 }
+.highlight-2{
+    background-color: var(--primaryLightColor);
+}
 
 @font-face {font-family: "Futura Bk BT";
     src: url("../fonts/futura_bk/onlinewebfonts.eot"); /* IE9*/
@@ -533,12 +536,12 @@ figure{
     -o-background-size: cover;
     background-size: cover;
 }
-.pic-6 {
+.pic-14 {
     animation-delay: 6s;
     -o-animation-delay: 6s;
     -moz--animation-delay: 6s;
     -webkit-animation-delay: 6s;
-    background: url(../img/dsc/dscml.jpg) no-repeat center center;
+    background: url(../img/dsc/fauzan.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -555,28 +558,41 @@ figure{
     -o-background-size: cover;
     background-size: cover;
 }
-.pic-8 {
+.pic-6 {
     animation-delay: 18s;
     -o-animation-delay: 18s;
     -moz--animation-delay: 18s;
     -webkit-animation-delay: 18s;
-    background: url(../img/dsc/dscgolang.jpg) no-repeat center center;
+    background: url(../img/dsc/dscml.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
 .pic-9 {
-    animation-delay: 22s;
-    -o-animation-delay: 22s;
-    -moz--animation-delay: 22s;
-    -webkit-animation-delay: 22s;
+    animation-delay: 24s;
+    -o-animation-delay: 24s;
+    -moz--animation-delay: 24s;
+    -webkit-animation-delay: 24s;
     background: url(../img/dsc/dsckotlin.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
+.pic-8 {
+    animation-delay: 30s;
+    -o-animation-delay: 30s;
+    -moz--animation-delay: 30s;
+    -webkit-animation-delay: 30s;
+    background: url(../img/dsc/dscgolang.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/*  */
 .pic-10{
     opacity: 1;
     background: url(../img/dsc/techfest1.jpg) no-repeat center center;
