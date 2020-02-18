@@ -135,6 +135,7 @@ html{
     background-color: var(--backgroundColorPrimary);
 }
 section{
+    overflow-x: hidden;
     height: 100vh;
     padding: 50px 80px;
     /* width: 100vw; */
