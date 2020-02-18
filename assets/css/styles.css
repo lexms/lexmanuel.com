@@ -135,7 +135,6 @@ html{
     background-color: var(--backgroundColorPrimary);
 }
 section{
-    overflow-x: hidden;
     height: 100vh;
     padding: 50px 80px;
     /* width: 100vw; */
@@ -549,8 +548,8 @@ header a{
     }
     .dscHighlightsLeft .avatar {
         border-radius: 50%;
-        -o-object-fit: cover;
-           object-fit: cover;
+        -o-object-fit: fill;
+           object-fit: fill;
         width: 100px;
         height: 100px;
     }
