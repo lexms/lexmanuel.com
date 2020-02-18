@@ -109,6 +109,7 @@
 
 
 @font-face {font-family: "Futura Bk BT";
+    src: local('Futura Bk BT');
     src: url("../fonts/futura_bk/onlinewebfonts.eot"); /* IE9*/
     src: url("../fonts/futura_bk/onlinewebfonts.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
     url("../fonts/futura_bk/onlinewebfonts.woff2") format("woff2"), /* chrome、firefox */
@@ -118,6 +119,7 @@
     font-display: swap;
 }
 @font-face {font-family: "Futura Md BT";
+    src: local('Futura Md BT');
     src: url("../fonts/futura_md/onlinewebfonts.eot"); /* IE9*/
     src: url("../fonts/futura_md/onlinewebfonts.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
     url("../fonts/futura_md/onlinewebfonts.woff2") format("woff2"), /* chrome、firefox */
