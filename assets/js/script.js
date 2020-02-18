@@ -15,7 +15,7 @@ setTimeout(function(){
     $(".photographer").addClass("photographer-animation")
     $(".cynophilist").addClass("cynophilist-animation")
     $(".heroRight a").addClass("heroRight-animation")
-}, 3100)
+}, 3000)
 
 setTimeout(function(){ 
     $("section.openingScreen").css("display", "none")
