@@ -21,24 +21,39 @@
 }
 .openingScreen{
     height: 100vh;
+    display: -webkit-box;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
     padding: 0px 15px 15px 15px;
     margin: -15px -15px 0px -15px;
-    animation: 2s mainColor 0.5s linear forwards;
+    -webkit-animation: 2s mainColor 0.5s linear forwards;
+            animation: 2s mainColor 0.5s linear forwards;
 }
 .openingScreen .smallLogo{
     opacity: 0;
     position: absolute;
+    -webkit-transition-property: all;
     transition-property: all;
-    animation: 1s fadeInOpening 2s linear forwards;
+    -webkit-animation: 1s fadeInOpening 2s linear forwards;
+            animation: 1s fadeInOpening 2s linear forwards;
 }
 .openingScreen .welcome{
     font-weight: 500;
     position: absolute;
     opacity: 1;
     /* animation: 2.5s fadeOutOpening 0s linear forwards; */
+}
+
+@-webkit-keyframes fadeInOpening{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 @keyframes fadeInOpening{
@@ -49,12 +64,33 @@
         opacity: 1;
     }
 }
+@-webkit-keyframes fadeOutOpening{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
 @keyframes fadeOutOpening{
     0%{
         opacity: 1;
     }
     100%{
         opacity: 0;
+    }
+}
+@-webkit-keyframes mainColor{
+    10%{
+        background-color: var(--primaryBlack);
+    }
+    50%{
+        background-color: var(--primaryColor);
+        color: var(--primaryTextColor);
+    }
+    100%{
+        background-color: var(--backgroundColorPrimary);
+        color: var(--backgroundColorPrimary);
     }
 }
 @keyframes mainColor{
@@ -93,7 +129,8 @@
 
 html{
     overflow-x: hidden;
-    scroll-snap-type: y proximity;
+    -ms-scroll-snap-type: y proximity;
+        scroll-snap-type: y proximity;
     scroll-behavior: smooth;
     background-color: var(--backgroundColorPrimary);
 }
@@ -215,16 +252,22 @@ nav {
     list-style: none;  
 }
 header{
+    display: -webkit-box;
     display: flex;
-    justify-content: space-between;  
+    -webkit-box-pack: justify;
+            justify-content: space-between;  
     padding-bottom: 2em;
     padding-right: 80px;
 }
 @media (max-width: 800px) {
     header{
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
+        -webkit-box-pack: start;
+                justify-content: flex-start;
+        -webkit-box-align: center;
+                align-items: center;
         padding-bottom: 1em;
         padding-right: 20px;
     }
@@ -233,6 +276,7 @@ header{
 	}
 }
 header nav{
+    display: -webkit-box;
     display: flex;
     
 }
@@ -252,19 +296,25 @@ header a{
     
 }
 .heroLeft-animation{
-    animation: 1s slidefade 0.5s forwards;
+    -webkit-animation: 1s slidefade 0.5s forwards;
+            animation: 1s slidefade 0.5s forwards;
 }
 .hero-content-area{
+  display: -webkit-box;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center;
   height: 80vh;
 }
 .heroRight{
     position: relative;
+    display: -webkit-box;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    -webkit-box-align: center;
+            align-items: center;
     width: 65%;
     height: 80vh;
     background-color: var(--primaryDarkColor);
@@ -278,34 +328,39 @@ header a{
     
 }
 .mentor-animation{
-    animation: 0.7s slidefade 0.5s forwards;
+    -webkit-animation: 0.7s slidefade 0.5s forwards;
+            animation: 0.7s slidefade 0.5s forwards;
 }
 .ai{
     opacity: 0;
     
 }
 .ai-animation{
-    animation: 0.7s slidefade 1.0s forwards;
+    -webkit-animation: 0.7s slidefade 1.0s forwards;
+            animation: 0.7s slidefade 1.0s forwards;
 }
 .designer{
     opacity: 0;
 }
 .designer-animation{
-    animation: 0.7s slidefade 1.5s forwards;
+    -webkit-animation: 0.7s slidefade 1.5s forwards;
+            animation: 0.7s slidefade 1.5s forwards;
 
 }
 .photographer{
     opacity: 0;
 }
 .photographer-animation{
-    animation: 0.7s slidefade 2.0s forwards;
+    -webkit-animation: 0.7s slidefade 2.0s forwards;
+            animation: 0.7s slidefade 2.0s forwards;
 
 }
 .cynophilist{
     opacity: 0;
 }
 .cynophilist-animation{
-    animation: 0.7s slidefade 2.5s forwards;
+    -webkit-animation: 0.7s slidefade 2.5s forwards;
+            animation: 0.7s slidefade 2.5s forwards;
     
 }
 .heroRight a{
@@ -314,13 +369,27 @@ header a{
     
 }
 .heroRight-animation{
-    animation: 1s fade 3.1s forwards;
+    -webkit-animation: 1s fade 3.1s forwards;
+            animation: 1s fade 3.1s forwards;
+}
+
+
+@-webkit-keyframes slidefade {
+	100% {
+		margin-left: 20px;
+        opacity: 1;
+	}
 }
 
 
 @keyframes slidefade {
 	100% {
 		margin-left: 20px;
+        opacity: 1;
+	}
+}
+@-webkit-keyframes fade {
+	100% {
         opacity: 1;
 	}
 }
@@ -341,6 +410,7 @@ header a{
     width: 200px;
     height: 200px;
     background-color: var(--primaryColor);
+    -webkit-transition: opacity 1s ease-in-out;
     transition: opacity 1s ease-in-out;
 }
 .profilePicture{
@@ -348,8 +418,10 @@ header a{
 }
 @media (max-width: 800px) {
     .hero-content-area{
-        align-items: flex-start;
-        justify-content: flex-end;
+        -webkit-box-align: start;
+                align-items: flex-start;
+        -webkit-box-pack: end;
+                justify-content: flex-end;
     }
     .heroRight{
         align-content: flex-end;
@@ -370,8 +442,10 @@ header a{
 /* about Description */
 #aboutDescription{
     position: relative;
+    display: -webkit-box;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+            align-items: center;
 }
 .primaryLightBox{
     position: absolute;
@@ -394,8 +468,11 @@ header a{
 }
 @media (max-width: 1024px) {
     #aboutDescription{
+        display: -webkit-box;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
     }
     #aboutDescription .content-desc{
         padding: 0em 0em;
@@ -428,10 +505,14 @@ header a{
 }
 .dscHighlightsLeft{
     position: relative;
+    display: -webkit-box;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+    -webkit-box-align: center;
+            align-items: center;
     padding: 15px 55px 15px 50px;
     background-color: var(--primaryDarkColor);
     color: var(--primaryTextColor);
@@ -450,7 +531,8 @@ header a{
 }
 
 .dscHighlightsLeft img {
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 @media (max-width: 800px) {
@@ -466,7 +548,8 @@ header a{
     }
     .dscHighlightsLeft .avatar {
         border-radius: 50%;
-        object-fit: fill;
+        -o-object-fit: fill;
+           object-fit: fill;
         width: 100px;
         height: 100px;
     }
@@ -483,8 +566,10 @@ header a{
 }
 .dscunikomRight{
     position: relative;
+    display: -webkit-box;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+            align-items: center;
     padding: 15px 50px;
     color: var(--primaryTextColor);
     background-color: var(--primaryLightColor);
@@ -526,8 +611,11 @@ header a{
 }
 .dscTechFestLeft{
     position: relative;
+    display: -webkit-box;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
     margin-bottom: -15px;
     padding: 50px 50px;
     color: var(--primaryTextColor);
@@ -569,9 +657,6 @@ figure{
 .pic-1{
     opacity: 1;
     background: url(../img/dsc/summit.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
 }
 .pic-2 {
@@ -580,9 +665,6 @@ figure{
     -moz--animation-delay: 6s;
     -webkit-animation-delay: 6s;
     background: url(../img/dsc/alex_top_dsc_leads.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
 }
 .pic-3 {
@@ -591,9 +673,6 @@ figure{
     -moz--animation-delay: 12s;
     -webkit-animation-delay: 12s;
     background: url(../img/dsc/dsc_cultural.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
 }
 .pic-4 {
@@ -602,17 +681,11 @@ figure{
     -moz--animation-delay: 18s;
     -webkit-animation-delay: 18s;
     background: url(../img/dsc/kl_summit.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
 } 
 .pic-5{
     opacity: 1;
     background: url(../img/dsc/dscinfosesion.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
 }
 .pic-14 {
@@ -621,9 +694,6 @@ figure{
     -moz--animation-delay: 6s;
     -webkit-animation-delay: 6s;
     background: url(../img/dsc/fauzan.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
 }
 .pic-7 {
@@ -632,9 +702,6 @@ figure{
     -moz--animation-delay: 12s;
     -webkit-animation-delay: 12s;
     background: url(../img/dsc/dscfrontend.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
 }
 .pic-6 {
@@ -643,9 +710,6 @@ figure{
     -moz--animation-delay: 18s;
     -webkit-animation-delay: 18s;
     background: url(../img/dsc/dscml.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
 }
 .pic-9 {
@@ -654,9 +718,6 @@ figure{
     -moz--animation-delay: 24s;
     -webkit-animation-delay: 24s;
     background: url(../img/dsc/dsckotlin.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
 }
 .pic-8 {
@@ -665,9 +726,6 @@ figure{
     -moz--animation-delay: 30s;
     -webkit-animation-delay: 30s;
     background: url(../img/dsc/dscgolang.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
 }
 
@@ -675,9 +733,6 @@ figure{
 .pic-10{
     opacity: 1;
     background: url(../img/dsc/techfest1.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
 }
 .pic-11 {
@@ -686,9 +741,6 @@ figure{
     -moz--animation-delay: 6s;
     -webkit-animation-delay: 6s;
     background: url(../img/dsc/techfest2.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
 }
 .pic-12 {
@@ -697,9 +749,6 @@ figure{
     -moz--animation-delay: 12s;
     -webkit-animation-delay: 12s;
     background: url(../img/dsc/techfest3.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
 }
 .pic-13 {
@@ -708,13 +757,10 @@ figure{
     -moz--animation-delay: 18s;
     -webkit-animation-delay: 18s;
     background: url(../img/dsc/techfest10.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
 } 
 /*  */
-@keyframes slideShow{0%{opacity:0;transform:scale(1);-ms-transform:scale(1)}5%{opacity:1}25%{opacity:1}30%{opacity:0;transform:scale(1.1);-ms-transform:scale(1.1)}100%{opacity:0;transform:scale(1);-ms-transformm:scale(1)}}@-o-keyframes slideShow{0%{opacity:0;-o-transform:scale(1)}5%{opacity:1}25%{opacity:1}30%{opacity:0;-o-transform:scale(1.1)}100%{opacity:0;-o-transformm:scale(1)}}@-moz-keyframes slideShow{0%{opacity:0;-moz-transform:scale(1)}5%{opacity:1}25%{opacity:1}30%{opacity:0;-moz-transform:scale(1.1)}100%{opacity:0;-moz-transformm:scale(1)}}@-webkit-keyframes slideShow{0%{opacity:0;-webkit-transform:scale(1)}5%{opacity:1}25%{opacity:1}30%{opacity:0;-webkit-transform:scale(1.1)}100%{opacity:0;-webkit-transformm:scale(1)}}
+@keyframes slideShow{0%{opacity:0;-webkit-transform:scale(1);transform:scale(1);-ms-transform:scale(1)}5%{opacity:1}25%{opacity:1}30%{opacity:0;-webkit-transform:scale(1.1);transform:scale(1.1);-ms-transform:scale(1.1)}100%{opacity:0;-webkit-transform:scale(1);transform:scale(1);-ms-transformm:scale(1)}}@-webkit-keyframes slideShow{0%{opacity:0;-webkit-transform:scale(1)}5%{opacity:1}25%{opacity:1}30%{opacity:0;-webkit-transform:scale(1.1)}100%{opacity:0;-webkit-transformm:scale(1)}}
 /*  */
 
 /* contact */
@@ -722,11 +768,13 @@ section.contact{
     height: inherit;
 }
 .contactBox{
+    display: -webkit-box;
     display: flex;
     height: 80vh;
     flex-wrap: wrap;
     padding-right: 80px;
-    justify-content: center;
+    -webkit-box-pack: center;
+            justify-content: center;
 }
 .contactBox a{
     opacity: 1;
@@ -744,13 +792,21 @@ section.contact{
 .box-1, .box-2, .box-3, .box-4, .box-5, .box-6{
     position: relative; 
     text-align: center;
+    display: -webkit-box;
     display: flex;
     width: 400px;
-    justify-content: center;
-    align-items: center;
-    perspective: 900px;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-perspective: 900px;
+            perspective: 900px;
+    -webkit-transition: -webkit-transform 0.8s;
+    transition: -webkit-transform 0.8s;
     transition: transform 0.8s;
-    transform-style: preserve-3d;
+    transition: transform 0.8s, -webkit-transform 0.8s;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
     margin: 1em;
   
 }
@@ -764,11 +820,13 @@ section.contact{
 }
 
 .box-1:hover, .box-2:hover, .box-3:hover, .box-4:hover, .box-5:hover, .box-6:hover{
-    transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
 
 }
 .contactBox .back{
-    transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
 }
 .contactBox .front ,.contactBox .back{
     position: absolute;
