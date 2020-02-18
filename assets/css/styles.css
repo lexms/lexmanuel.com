@@ -460,13 +460,13 @@ header a{
 }
 #aboutDescription img{
     z-index: 99;
-/*     height: 461px; */
-    width: 400px;
+    height: auto;
+    width: 30%;
 }
 #aboutDescription hr{
     border: 2px solid var(--primaryColor);
 }
-@media (max-width: 1024px) {
+@media (max-width: 800px) {
     #aboutDescription{
         display: -webkit-box;
         display: flex;
@@ -479,8 +479,8 @@ header a{
     }
     #aboutDescription img{
         align-self: center;
-        height: 231px;
-        width: 200px;
+        height: 200px;
+        width: auto;
     }
     .primaryLightBox{
         position: absolute;
@@ -501,7 +501,7 @@ header a{
     }
 }
 .dscHighlights{
-    overflow: hidden;
+    overflow-x: hidden;
 }
 .dscHighlightsLeft{
     position: relative;
@@ -548,8 +548,8 @@ header a{
     }
     .dscHighlightsLeft .avatar {
         border-radius: 50%;
-        -o-object-fit: fill;
-           object-fit: fill;
+        -o-object-fit: cover;
+           object-fit: cover;
         width: 100px;
         height: 100px;
     }
