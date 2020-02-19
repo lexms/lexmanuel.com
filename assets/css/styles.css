@@ -8,6 +8,10 @@
     --backgroundColorPrimary:#F5F5F6;
     --stabiloColor:#D1D5FF;
 }
+.smallLogo{
+    width: 180px;
+    height: 53px;
+}
 
 .highlight{
     background-color: var(--stabiloColor);
@@ -288,10 +292,7 @@ header nav li{
 header a{
     color: var(--primaryBlack);
 }
-.navbarLogo{
-    width: 180px;
-    /* height   : 71.46px; */
-}
+
 /* hero-content-area  */
 .heroLeft{
     opacity: 0;
