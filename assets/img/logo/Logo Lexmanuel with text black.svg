@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="457.71" height="133.5" viewBox="0 0 1830.84 534">
+  <defs>
+    <style>
+      .cls-1 {
+        filter: url(#filter);
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill-rule: evenodd;
+      }
+
+      .cls-4 {
+        font-size: 270.833px;
+        font-family: "Futura Md BT";
+        font-weight: 500;
+      }
+    </style>
+    <filter id="filter" filterUnits="userSpaceOnUse">
+      <feFlood result="flood"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Logo_Lexmanuel" data-name="Logo Lexmanuel" class="cls-1">
+    <circle class="cls-2" cx="61" cy="473" r="61"/>
+    <path id="main_line" data-name="main line" class="cls-3" d="M4493.19,715h295l53,91h-401l-53-91,259-443h101Z" transform="translate(-4379.16 -272)"/>
+    <path id="round_right" data-name="round right" class="cls-3" d="M4749.01,649l-95.22-165s-74.55,70.117-22.06,165C4631.74,649.012,4749.01,649,4749.01,649Z" transform="translate(-4379.16 -272)"/>
+    <path id="extend_round_right" data-name="extend round right" class="cls-3" d="M4629,644l26.03,46H4773l-27-46H4629Z" transform="translate(-4379.16 -272)"/>
+    <path id="round_left" data-name="round left" class="cls-3" d="M4428.19,272l95,165s74.37-70.117,22-165C4545.18,271.987,4428.19,272,4428.19,272Z" transform="translate(-4379.16 -272)"/>
+    <text id="Lexmanuel" class="cls-4" x="461.837" y="357.091">Lexmanuel</text>
+  </g>
+</svg>
