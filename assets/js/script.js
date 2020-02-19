@@ -3,9 +3,17 @@ $(window).on('load', function(){
 
 })
 
-
-if (navigator.userAgent.search("Safari") & gt; = 0 & amp; & amp; navigator.userAgent.search("Chrome") & lt; 0) {
-        // insert conditional Safari code here
+let userAgentString =  
+navigator.userAgent; 
+let chromeAgent =  
+                userAgentString.indexOf("Chrome") > -1; 
+let safariAgent =  
+                userAgentString.indexOf("Chrome") > -1; 
+if ((chromeAgent) && (safariAgent)){
+  safariAgent = false
+}  
+if (safariAgent){
+  console.log(safariAgent)
   $(document).ready(function(){
     $("a").on('click', function(event) {
       // Make sure this.hash has a value before overriding default behavior
@@ -14,13 +22,13 @@ if (navigator.userAgent.search("Safari") & gt; = 0 & amp; & amp; navigator.userA
         event.preventDefault();
         // Store hash
         var hash = this.hash;
-
+  
         // Using jQuery's animate() method to add smooth page scroll
         // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
         $('html, body').animate({
           scrollTop: $(hash).offset().top
         }, 800, function(){
-
+  
           // Add hash (#) to URL when done scrolling (default click behavior)
           window.location.hash = hash;
         });
@@ -28,6 +36,7 @@ if (navigator.userAgent.search("Safari") & gt; = 0 & amp; & amp; navigator.userA
     });
   });
 }
+
 
 setTimeout(function(){ 
     $([document.documentElement, document.body]).animate({

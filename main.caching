@@ -1,0 +1,13 @@
+CACHE MANIFEST
+
+CACHE:
+index.html
+assets/css/styles.css
+assets/fonts/futura_bk/onlinewebfonts.ttf
+assets/fonts/futura_md/onlinewebfonts.ttf
+
+NETWORK:
+*
+
+FALLBACK:
+static.html
