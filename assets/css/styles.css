@@ -25,6 +25,11 @@
             transition-timing-function: cubic-bezier(0.23, 1, 0.320, 1) ;
     color: var(--primaryBlack);
 }
+@media (max-width: 800px) {
+    .btn-goTop{
+        font-size: 1.5em;
+    }
+}
 .btn-goTop:hover{
     color: var(--primaryTextColor);
     background-color: var(--primaryLightColor);
