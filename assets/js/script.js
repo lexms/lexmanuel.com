@@ -2,6 +2,18 @@ $(window).on('load', function(){
     $(window).scrollTop(0)
 
 })
+$(window).on('scroll', function(){
+  if ($(window).scrollTop()>20){
+    $(".btn-goTop").css("display", "block")
+  }else{
+    $(".btn-goTop").css("display", "none")
+  }
+})
+function goTop(){
+  $(window).scrollTop(0)
+}
+
+
 
 let userAgentString =  
 navigator.userAgent; 
@@ -56,5 +68,5 @@ setTimeout(function(){
     $("section.openingScreen").css("display", "none")
     $(".primaryBox").css("opacity","1")
 
-}, 4000)
+}, 5000)
 
