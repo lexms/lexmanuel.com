@@ -30,20 +30,32 @@ setTimeout(function () {
   $('.3rd').fadeOut()     
 }, 9500);
 
+
+
+  
+
+
+
 setTimeout(function () {      
-  if ($(window).width() <= 800) {
+  if (navigator.userAgent.match(/Android/i) 
+  || navigator.userAgent.match(/webOS/i) 
+  || navigator.userAgent.match(/iPhone/i)  
+  || navigator.userAgent.match(/iPad/i)  
+  || navigator.userAgent.match(/iPod/i) 
+  || navigator.userAgent.match(/BlackBerry/i) 
+  || navigator.userAgent.match(/Windows Phone/i)) { 
+    amobile = true; 
+  } else { 
+    amobile = false; 
+  }
+  if (($(window).width() <= 800) || (amobile == true)) {
     $('#yourpage').fadeOut()
     $('.loading').fadeIn()
     alert('Please open it with your laptop :)');
   }   
 }, 0);
 
-setTimeout(function () {      
-  if ($(window).width() <= 800) {
-    $('#yourpage').fadeOut()
-    alert('Please open it with your laptop :)');
-  }   
-}, 10000);
+
 
 setTimeout(function () {      
   $('.4th').fadeIn()     
