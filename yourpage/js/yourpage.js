@@ -5,7 +5,7 @@ var noBtn = $("#noBtn"),
 var x = document.getElementById("playit"); 
 function playAudio() { 
   x.play();
-  alert('yes!');
+  alert('YESSS!');
   $('.sendingvirtualhand').fadeIn() 
 } 
 function foo()
