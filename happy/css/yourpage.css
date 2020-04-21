@@ -314,7 +314,11 @@ section{
 video{
   max-height: 70vh;
 }
-
+iframe{
+  min-height: 70vh;
+  min-width: 38vh;
+  
+}
 .canvas{
   display: block;
   z-index: -1;
